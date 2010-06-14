@@ -11,8 +11,11 @@ Build-Depends: debhelper (>= 7), pkg-kde-tools (>= 0.4),
  libasound2-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
  libfftw3-dev,
  poxml, gawk, cmake
-Standards-Version: 3.8.1
 Homepage: http://kwave.sourceforge.net
+Standards-Version: 3.8.4
+Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/kwave/trunk
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/kwave/trunk?op=log
+
 
 Package: kwave
 Architecture: any
