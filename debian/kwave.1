@@ -1,0 +1,65 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH KWAVE 1 "April 7, 2002"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+kwave \- A sound editor for KDE
+.SH SYNOPSIS
+.B kwave
+.RI [ options ] " files" ...
+.SH DESCRIPTION
+"Kwave" is a simple sound editor for KDE. Its features include:
+  * simple cut, copy and paste functions
+  * undo/redo
+  * simple filter design tools
+  * a small editor for additive synthesis
+  * labeling of signals
+  * some analysis functions such as Sonagram or Fourier Transformation
+  * internally uses 24 bit integer sample data
+  * free selectable sample rates
+  * support for editing of multi-channel files
+  * playback of multi-channel audio files (audio output will be mixed down to mono or stereo)
+  * extendible through an easy-to-use plugin interface
+
+.SH OPTIONS
+A summary of options are included below.
+.TP
+.B \-\-help
+Show summary of options.
+.TP
+.B \-\-help\-qt
+Show Qt specific options
+.TP
+.B \-\-help\-kde
+Show KDE specific options
+.TP
+.B \-\-help\-all
+Show all options
+.TP
+.B \-\-author
+Show author information
+.TP
+.B \-v, \-\-version
+Show version of program.
+.TP
+.B \-\-license
+Show license information
+.SH AUTHOR
+.B Kwave 
+was written by Thomas Eschenbacher <Thomas.Eschenbacher@gmx.de>.
+.br
+This manual page was written by Aurelien Jarno <aurel32@debian.org>,
+for the Debian GNU/Linux system (but may be used by others).

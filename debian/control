@@ -1,0 +1,36 @@
+Source: kwave
+Section: kde
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: cdbs, debhelper (>= 7), quilt, pkg-kde-tools (>= 0.4),
+ kdelibs5-dev (>= 4:4.2.0), gettext, pkg-config,
+ imagemagick, recode, libid3-3.8.3-dev (>= 3.8.3-4.2),
+ libaudiofile-dev, libogg-dev, libvorbis-dev (>= 1.0.0-2), 
+ libflac++-dev (>= 1.1.4), libmad0-dev, libgsl0-dev,
+ libasound2-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
+ libfftw3-dev,
+ poxml, gawk, cmake
+Standards-Version: 3.8.1
+Homepage: http://kwave.sourceforge.net
+
+Package: kwave
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: kwave-doc-en, kwave-doc-de, kwave-doc-fr
+Provides: kwave-doc, kwave-doc-en, kwave-doc-de, kwave-doc-fr
+Description: sound editor for KDE
+ "Kwave" is a simple sound editor for KDE. Its features include:
+   * simple cut, copy and paste functions
+   * undo/redo
+   * simple filter design tools
+   * a small editor for additive synthesis
+   * labeling of signals
+   * some analysis functions such as Sonagram or Fourier Transformation
+   * internally uses 24 bit integer sample data
+   * free selectable sample rates
+   * support for editing of multi-channel files
+   * playback of multi-channel audio files (audio output will be mixed
+     down to mono or stereo)
+   * extensible through an easy-to-use plugin interface
+ .
+  Author:   Thomas Eschenbacher <Thomas.Eschenbacher@gmx.de>

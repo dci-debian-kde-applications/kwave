@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+DEB_HOST_ARCH_OS ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+
+ifneq ($(DEB_HOST_ARCH_OS),linux)
+  DEB_CMAKE_CUSTOM_FLAGS += -DWITH_ALSA=OFF
+endif
+
+include /usr/share/cdbs/1/rules/patchsys-quilt.mk
+include /usr/share/pkg-kde-tools/makefiles/1/cdbs/kde.mk
+include /usr/share/cdbs/1/rules/debhelper.mk

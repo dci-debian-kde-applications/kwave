@@ -1,0 +1,8 @@
+audio/basic; kwave %s; test=test "$DISPLAY" != ""; description="ULAW (Sun) audio"
+audio/x-aiff; kwave %s; test=test "$DISPLAY" != ""; description="AIFF/Amiga audio"
+audio/x-mp1; kwave %s; test=test "$DISPLAY" != ""; description="MPEG layer 1 audio"
+audio/x-mp2; kwave %s; test=test "$DISPLAY" != ""; description="MPEG layer 2 audio"
+audio/x-mp3; kwave %s; test=test "$DISPLAY" != ""; description="MPEG layer 3 audio"
+audio/x-wav; kwave %s; test=test "$DISPLAY" != ""; description="Waveform Microsoft Wave/RIFF"
+audio/x-ircam; kwave %s; test=test "$DISPLAY" != ""; description="Compressed Audio Interchange Format"
+audio/ogg; kwave %s; test=test "$DISPLAY" != ""; description="Ogg Vorbis multimedia format"
