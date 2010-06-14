@@ -1,0 +1,3690 @@
+# translation of help_cs.po to čeština
+# Copyright (C) 2009 Pavel Fric
+# This file is distributed under the same license as the Kwave package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cs\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2009-04-25 05:47+0000\n"
+"PO-Revision-Date: 2009-02-16 15:36-0300\n"
+"Last-Translator: Pavel Fric <pavelfric@seznam.cz>\n"
+"Language-Team:  <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Tag: title
+#: help_en-work.docbook:15
+#, no-c-format
+msgid "The &kapp; Handbook"
+msgstr ""
+
+#. Tag: author
+#: help_en-work.docbook:18
+#, no-c-format
+msgid "<firstname>Thomas</firstname> <surname>Eschenbacher</surname>"
+msgstr ""
+
+#. Tag: email
+#: help_en-work.docbook:22
+#, no-c-format
+msgid "thomas.eschenbacher@gmx.de"
+msgstr ""
+
+#. Tag: trans_comment
+#: help_en-work.docbook:26
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>FirstName</"
+"firstname><surname>Surname</surname><affiliation><address><email>name@domain."
+"com</email></address></affiliation><contrib>CS Translation</contrib></"
+"othercredit>"
+
+#. Tag: holder
+#: help_en-work.docbook:30
+#, no-c-format
+msgid "Martin Wilz"
+msgstr ""
+
+#. Tag: holder
+#: help_en-work.docbook:31
+#, no-c-format
+msgid "Thomas Eschenbacher"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:38
+#, no-c-format
+msgid "&kapp; is a simple sound editor for KDE."
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:41
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:42
+#, no-c-format
+msgid "multimedia"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:43
+#, no-c-format
+msgid "sound"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:44
+#, no-c-format
+msgid "audio"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:45
+#, no-c-format
+msgid "Kwave"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:46
+#, no-c-format
+msgid "<keyword>wav</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:47
+#, no-c-format
+msgid "editor"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:48
+#, no-c-format
+msgid "record"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:49
+#, no-c-format
+msgid "playback"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:50
+#, no-c-format
+msgid "sonagram"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:51
+#, no-c-format
+msgid "<keyword>FFT</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: help_en-work.docbook:52
+#, no-c-format
+msgid "Linux"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:60
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:68
+#, no-c-format
+msgid ""
+"This is \"&kapp;\", a simple sound editor for KDE3. Its features include:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:72
+#, no-c-format
+msgid "simple cut, copy and paste functions"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:75
+#, no-c-format
+msgid "multi-level undo/redo"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:84
+#, no-c-format
+msgid "labeling of signals"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:87
+#, no-c-format
+msgid "Recording functionality, including pre-recording"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:90
+#, no-c-format
+msgid "Playback via ALSA and OSS"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:93
+#, no-c-format
+msgid "Recording via ALSA and OSS"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:96
+#, no-c-format
+msgid "MP3 import"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:99
+#, no-c-format
+msgid "Ogg/Vorbis import/export"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:102
+#, no-c-format
+msgid "FLAC import/export"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:105
+#, no-c-format
+msgid "some analysis functions such as Sonagram"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:108
+#, no-c-format
+msgid "internally uses 24 bit fixed precision for sample data"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:111
+#, no-c-format
+msgid "free selectable sample rates"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:114
+#, no-c-format
+msgid "support for editing of multi-channel files"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:117
+#, no-c-format
+msgid ""
+"playback of multi-channel audio files (audio output will be mixed down to "
+"mono or stereo)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:121
+#, no-c-format
+msgid "extendible through an easy-to-use plugin interface"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:124
+#, no-c-format
+msgid ""
+"import/export of other audio formats through <ulink url=\"http://freeware."
+"sgi.com/Installable/audiofile-0.2.3.html\">audiofile</ulink>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:131
+#, no-c-format
+msgid ""
+"If you are interested what has been done and what has still to be done, then "
+"look at the files <filename>CHANGES</filename> and <filename>TODO</filename> "
+"included in the source package. Help and constructive critics are always "
+"welcome."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:143
+#, no-c-format
+msgid "&kapp; Resources"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:145
+#, no-c-format
+msgid ""
+"So if you want to get in contact with the developers, need some further help "
+"on using &kapp;, submit patches, bug reports or other stuf, the following "
+"resources might be of interest for you:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:152
+#, no-c-format
+msgid "Project Homepage"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:153
+#, no-c-format
+msgid ""
+"For informations about new up-to-date releases or some other information "
+"about this project, take a look at the <ulink url=\"http://kwave.sourceforge."
+"net/\">&kapp; homepage</ulink>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:158
+#, no-c-format
+msgid "Mailing List"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:159
+#, no-c-format
+msgid ""
+"If you need some help on using &kapp; or want to get involved in the "
+"development, join the Kwave developer mailing list by visiting <ulink url="
+"\"https://lists.sourceforge.net/lists/listinfo/kwave-devel\"> \"https://"
+"lists.sourceforge.net/lists/listinfo/kwave-devel\"</ulink>."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:166
+#, no-c-format
+msgid "SVN Repository"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:169
+#, no-c-format
+msgid ""
+"There also is a SVN repository, hosted by <ulink url=\"http://sourceforge.net"
+"\">SourceForge</ulink> where you can get the sources of the latest "
+"development version. For instructions on how to get access to the "
+"repository, read in the chapter about <link linkend=\"building_rpm_from_svn"
+"\">building from SVN</link>, look at <ulink url=\"http://sourceforge.net/"
+"svn/?group_id=6478\">\"http://sourceforge.net/svn/?group_id=6478\"</ulink>, "
+"or just browse through the SVN tree through a nice web interface."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:188
+#, no-c-format
+msgid "&kapp; Revision History"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:190
+#, no-c-format
+msgid ""
+"This project has been started by Martin Wilz in summer 1998 and has been "
+"developed and improved by him an some other people. In November 1999 Thomas "
+"Eschenbacher has started to fix some little bugs here and there and stepped "
+"into the source code of the program deeper and deeper. Up to today he has "
+"extended, rewritten or revised nearly every component of the program and "
+"spent much time on improving it."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:200
+#, no-c-format
+msgid ""
+"Since &kapp; v0.8.0 the changlog is no longer included in this manual. So if "
+"you are interested in a complete list of changes, you can find the full "
+"history here: <ulink url=\"http://svn.sourceforge.net/viewvc/kwave/trunk/"
+"CHANGES?view=markup\"> \"http://svn.sourceforge.net/viewvc/kwave/trunk/"
+"CHANGES?view=markup\"</ulink>."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:218
+#, no-c-format
+msgid "Installation"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:224
+#, no-c-format
+msgid "How to obtain &kapp;"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:226
+#, no-c-format
+msgid ""
+"&kapp; has an own homepage under <ulink url=\"http://kwave.sourceforge.net/"
+"\"> http://kwave.sourceforge.net/</ulink>. Here you can find further "
+"informations about the project, as well as informations about current stable "
+"and up-to-date development versions."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:235
+#, no-c-format
+msgid ""
+"If you want to get a &kapp; release, you have the choice to visit <ulink url="
+"\"http://kwave.sourceforge.net/download.html\"></ulink> http://kwave."
+"sourceforge.net/download.html and"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:240
+#, no-c-format
+msgid ""
+"download a binary package of the latest stable version, if there is one for "
+"your distribution,"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:244
+#, no-c-format
+msgid "download a source RPM package of the latest stable version,"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:247
+#, no-c-format
+msgid ""
+"compile on your own, from a .tar.gz archive with the source code of the "
+"latest stable version,"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:251
+#, no-c-format
+msgid "compile on your own, from the latest SVN source."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:257
+#, no-c-format
+msgid ""
+"Don't be afraid, compiling Kwave should be quite simple even if you are not "
+"a programmer. It just needs some developer packages to be installed."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:269
+#, no-c-format
+msgid "Requirements"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:271
+#, no-c-format
+msgid "In order to successfully use &kapp;, you need:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:274
+#, no-c-format
+msgid ""
+"a computer running Linux (&kapp; might also run under some other operating "
+"system, but we have never tested this, please let us know if you get it "
+"working under some other platform / operating system)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:280
+#, no-c-format
+msgid ""
+"working sound playback (not really required for using but what would you do "
+"with a sound editor if you can't <emphasis>hear</emphasis> the result of "
+"your work?)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:285
+#, no-c-format
+msgid ""
+"KDE-4.0 or higher (at least the libraries, if you are a gnome fan, you can "
+"also run &kapp; if the proper libs are installed)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:290
+#, no-c-format
+msgid "qt-4.1 or higher (normally comes with KDE4)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:293
+#, no-c-format
+msgid "ALSA 1.0.14 or higher (for record/playback)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:296
+#, no-c-format
+msgid "id3lib-3.8.1 or higher (for ID3 tags)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:299
+#, no-c-format
+msgid "mad-0.15 or higher (optionally for MP3 import)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:302
+#, no-c-format
+msgid "flac-1.1.0 or higher (for FLAC import/export)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:305
+#, no-c-format
+msgid ""
+"about 64 MB memory for starting &kapp; (but this may vary depending on your "
+"platform and configuration)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:312
+#, no-c-format
+msgid ""
+"For a more complete and up-to-date list, please consult the README file that "
+"is included in the source distribution or can be found here: <ulink url="
+"\"http://svn.sourceforge.net/viewvc/kwave/trunk/README?view=markup\"> "
+"\"http://svn.sourceforge.net/viewvc/kwave/trunk/README?view=markup\"</"
+"ulink>. This file also contains some special hints for getting &kapp; "
+"running and/or building &kapp; under some distributions."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:322
+#, no-c-format
+msgid ""
+"If you intend to compile &kapp; from the sources, you will need at least:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:325
+#, no-c-format
+msgid "<ulink url=\"http://www.cmake.org\">cmake</ulink>-2.4.6 or newer"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:328
+#, no-c-format
+msgid ""
+"A C/C++ compiler. GCC-3.4 works fine, some older and any newer version (like "
+"gcc-4.1 and newer) work too."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:332
+#, no-c-format
+msgid ""
+"The glibc2 (libc-6) development environment. On SuSE systems the package is "
+"called \"libc\", on other systems it might be called \"libc-devel\"."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:337
+#, no-c-format
+msgid ""
+"The KDE4 development environment: \"kdelibs4-devel\", \"kdemultimedia4-devel"
+"\", \"kdesdk4\"."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:341
+#, no-c-format
+msgid ""
+"The Qt4 development environment, the package is normally called \"qt4-devel"
+"\" or similar."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:345
+#, no-c-format
+msgid "id3lib-devel-3.8.1 or higher"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:348
+#, no-c-format
+msgid "fftw-3.x"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:351
+#, no-c-format
+msgid "mad-devel-0.15 or higher (if you have the permission to use MP3 code)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:355
+#, no-c-format
+msgid "flac-devel-1.1.0 higher"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:358
+#, no-c-format
+msgid ""
+"If you intend to get the &kapp; sources via SVN, you will also need a "
+"current subversion package."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:362
+#, no-c-format
+msgid ""
+"...many other packages, please take a look at the <ulink url=\"http://svn."
+"sourceforge.net/viewvc/kwave/trunk/README?view=markup\"> \"README\"</ulink> "
+"file included in the source package."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:376
+#, no-c-format
+msgid "Manual Compilation and installation"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:378
+#, no-c-format
+msgid ""
+"Since version 0.7.10 &kapp; uses <ulink url=\"http://www.cmake.org\">cmake</"
+"ulink>, the make system that is also used by KDE itself. So if you can build "
+"other KDE applications, you should also be able to build &kapp;. If you run "
+"into problems please report them to the &kapp; <link linkend=\"mailing-list"
+"\">mailing list</link>."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:387
+#, no-c-format
+msgid ""
+"In order to compile and install &kapp; on your system, it is best practice "
+"to do a <emphasis>out-of-tree</emphasis> build. This means that you hold the "
+"sources of &kapp; in one directory and build the package in another "
+"(temporary) directory."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:394
+#, no-c-format
+msgid ""
+"For example, assuming that your sources are already unpacked in "
+"<filename><replaceable>$HOME/src/kwave-&version;</replaceable></filename>, "
+"you can do the following: <screen width=\"40\" format=\"linespecific\">\n"
+"<prompt>% </prompt><command>mkdir /tmp/kwave-build</command>\n"
+"<prompt>% </prompt><command>cd /tmp/kwave-build</command>\n"
+"<prompt>% </prompt><command>cmake <replaceable>$HOME/src/kwave-&version;</"
+"replaceable> <replaceable>[build options]</replaceable></command>\n"
+"<prompt>% </prompt><command>make</command>\n"
+"<prompt>% </prompt><command>su root -c \"make install\"</command>\n"
+"</screen> (Specifying build options is a way to enable or disable specific "
+"features. See the following section for descriptions)"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:409
+#, no-c-format
+msgid "Build options"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:411
+#, no-c-format
+msgid ""
+"By specifying build options, you can enable or disable some features of "
+"&kapp;, like excluding some components or plugins from the generated "
+"package. Here is a list of the available options:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:417
+#, no-c-format
+msgid ""
+"<literal>WITH_ALSA</literal> enable playback/recording via ALSA "
+"[<literal>on</literal>/<literal>off</literal>, default=<literal>on</literal>]"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:423
+#, no-c-format
+msgid ""
+"<literal>WITH_DOC</literal> build online documentation [<literal>on</"
+"literal>/<literal>off</literal>, default=<literal>on</literal>]"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:429
+#, no-c-format
+msgid ""
+"<literal>WITH_FLAC</literal> enable support for FLAC files [<literal>on</"
+"literal>/<literal>off</literal>, default=<literal>on</literal>]"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:435
+#, no-c-format
+msgid ""
+"<literal>WITH_MP3</literal> enable support for mp3 files [<literal>on</"
+"literal>/<literal>off</literal>, default=<literal>off</literal>] Please note "
+"that you need the permission to use code covered by the MP3 software patents!"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:443
+#, no-c-format
+msgid ""
+"<literal>WITH_OGG</literal> enable support for ogg files [<literal>on</"
+"literal>/<literal>off</literal>, default=<literal>on</literal>]"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:449
+#, no-c-format
+msgid ""
+"<literal>WITH_OSS</literal> enable playback/recording via OSS [<literal>on</"
+"literal>/<literal>off</literal>, default=<literal>on</literal>]"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:458
+#, no-c-format
+msgid ""
+"These options can be passed to <literal><command>cmake</command></literal> "
+"with <command><literal>-D</literal><replaceable>option</"
+"replaceable><literal>=</literal><replaceable>value</replaceable></command>. "
+"For example, if you want to enable MP3 import, you can pass the "
+"corresponding option as follows:"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:463
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>cmake <replaceable>[source directory]</"
+"replaceable> -DWITH_MP3=ON <replaceable>[other options...]</replaceable></"
+"command>"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:472
+#, no-c-format
+msgid "Building RPM packages from tar.gz archives"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:475
+#, no-c-format
+msgid "With working rpmbuild -ta"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:477
+#, no-c-format
+msgid ""
+"If you are runnig a system with RPM support, the preferred way to install "
+"&kapp; on your system will be the creation of a nice RPM package. First you "
+"should get the current source of &kapp;, either as a tar.gz archive from the "
+"&kapp; download page or check out an up-to-date copy via <link linkend=\"svn-"
+"repository\">SVN</link> (like described in the <link linkend=\"svn_checkout"
+"\">chapter about SVN</link>) and read the <link linkend="
+"\"building_rpm_from_svn\">next</link> chapter."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:488
+#, no-c-format
+msgid ""
+"If you have downloaded a tar.gz archives of &kapp;, create and install the "
+"RPMs just by doing the following steps (where <replaceable>[arch]</"
+"replaceable> stands for the platform you have built the package and might be "
+"something like <literal>i386</literal>, <literal>i586</literal>, "
+"<literal>sparc</literal> or whatever, <replaceable>XXX</replaceable> stands "
+"for the version number you have downloaded)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:499
+#, no-c-format
+msgid "To build the &kapp; package and install it do:"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:501
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>rpmbuild -ta <replaceable>kwave-XXX.tar.gz</"
+"replaceable></command>\n"
+"<prompt>% </prompt><command>rpm -i <replaceable>/usr/src/redhat/RPMS/[arch]/"
+"kwave-XXX.[arch].rpm</replaceable></command>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:504
+#, no-c-format
+msgid ""
+"<emphasis>Note for SuSE users: </emphasis> you have to specify the directory "
+"<filename>/usr/src/packages</filename> instead of <filename>/usr/src/redhat</"
+"filename> !"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:511
+#, no-c-format
+msgid ""
+"If you haven't seen any errors, then that's it and you can skip the rest of "
+"this chapter. If rpm was unable to build the packages and says something "
+"like \"spec file not found\", then go on and read the rest of this section."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:521
+#, no-c-format
+msgid "With broken rpmbuild -ta support"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:523
+#, no-c-format
+msgid ""
+"If you can't get <command>rpmbuild -ta</command> working, here are the steps "
+"for making that manually (the hard way):"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:529
+#, no-c-format
+msgid ""
+"Go to your RPM \"topdir\". This normally is <filename>/usr/src/redhat</"
+"filename> for the redhat distribution or <filename>/usr/src/packages</"
+"filename> if you have the SuSE distribution."
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:535
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>cd /usr/src/<replaceable>redhat</replaceable></"
+"command>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:538
+#, no-c-format
+msgid ""
+"Put the tar.gz archive into the SOURCES subdirectory (you have to replace "
+"\"somewhere\" with the real directory where the files are, of course)."
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:542
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>cp <replaceable>/somewhere/kwave-XXX.tar.gz</"
+"replaceable> SOURCES</command>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:545
+#, no-c-format
+msgid ""
+"Extract the spec file from the archives and put it into the SPEC "
+"subdirectory."
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:548
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>tar -xOzf SOURCES/<replaceable>kwave-XXX.tar.gz</"
+"replaceable> \\*.spec > SPECS/kwave.spec</command>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:551
+#, no-c-format
+msgid ""
+"Let rpm do the compile job and generate the rpm of &kapp;. If you only want "
+"to make a binary package, you can specify <literal>-bb</literal> instead of "
+"<literal>-ba</literal>, or just <literal>-bs</literal> to build only a "
+"source package."
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:557
+#, no-c-format
+msgid "<prompt>% </prompt><command>rpmbuild -ba SPECS/kwave.spec</command>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:560
+#, no-c-format
+msgid ""
+"If everything was ok, you can install the binary rpm of &kapp;, it will be "
+"in the BUILD directory. If you already have a version of &kapp; installed, "
+"please remove it first or use the parameter <literal>-U</literal> instead of "
+"<literal>-i</literal> for upgrading instead of installing."
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:567
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>rpm -ivh BUILD/<replaceable>[arch]/kwave-XXX."
+"[arch].rpm</replaceable></command>"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:580
+#, no-c-format
+msgid "Building RPM packages from SVN"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:582
+#, no-c-format
+msgid "Checking out the sources"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:584
+#, no-c-format
+msgid ""
+"For initially checking out the sources you will need some disk space (about "
+"25 megabytes) in a directory of your choice, the svn package of your "
+"favorite distribution and full access to the internet. If you get error "
+"messages about rejected connections you either have typed something wrong or "
+"your provider doesn't give you full access. A good place for the source "
+"files will be <filename>\"$HOME/src\"</filename>."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:594
+#, no-c-format
+msgid ""
+"First create the directory that will receive the subdirectoy with &kapp; "
+"sources and change into it:"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:597
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>mkdir -p <replaceable>$HOME/src</replaceable></"
+"command>\n"
+"<prompt>% </prompt><command>cd <replaceable>$HOME/src</replaceable></command>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:600
+#, no-c-format
+msgid "Then check out the latest sources from the SVN server:"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:602
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>svn checkout https://kwave.svn.sourceforge.net/"
+"svnroot/kwave/trunk kwave</command>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:604
+#, no-c-format
+msgid ""
+"or you can check out a specific release with the following command: <screen "
+"width=\"75\" format=\"linespecific\">\n"
+"<prompt>% </prompt><command>svn checkout https://kwave.svn.sourceforge.net/"
+"svnroot/kwave/tags/<replaceable>[release-tag]</replaceable> kwave</command>\n"
+"</screen> You can look up the names of the release tags in the web svn page "
+"at <ulink url=\"http://svn.sourceforge.net/viewvc/kwave/tags/\">\"http://svn."
+"sourceforge.net/viewvc/kwave/tags/\"</ulink>. The release tags are always "
+"built out of the word <literal>Release-</literal> and the version number of "
+"the release, with underscores instead of dots. For example "
+"\"<literal>Release-&version_tag;</literal>\" for v&version;."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:616
+#, no-c-format
+msgid ""
+"There <emphasis>must not</emphasis> be a directory named <filename>kwave</"
+"filename> under the directory you want to check out. Otherwise the svn "
+"program will complain about already existing files and the checkout will not "
+"work."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:626
+#, no-c-format
+msgid "Updating sources from SVN"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:627
+#, no-c-format
+msgid ""
+"The procedure described in the previous section is only necessary once. For "
+"further updates it is much easier. Just change into the directory where you "
+"have the checked out sources and do the following: <screen width=\"75\" "
+"format=\"linespecific\">\n"
+"<prompt>% </prompt><command>svn update</command>\n"
+"</screen> Then go on to the next section and compile as usual."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:634
+#, no-c-format
+msgid ""
+"If you think that you have messed up your local source or if there are "
+"conflicts during updating, you can remove all files and directories from "
+"your &kapp; source directory, <emphasis>except the <filename>.svn</filename> "
+"directory </emphasis>and then try again."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:642
+#, no-c-format
+msgid "Compiling"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:643
+#, no-c-format
+msgid ""
+"Building rpm package from a SVN snapshot is quite simple. The procedure is "
+"nearly the same as described in the last section, so it unhappily also has "
+"the same problem with the <command>rpmbuild -ta</command> command our method "
+"internally uses. Like in the previous chapter, <replaceable>[arch]</"
+"replaceable> stands for the platform you have Built the package and might be "
+"something like <literal>i386</literal>, <literal>i586</literal>, "
+"<literal>sparc</literal> or whatever, <replaceable>XXX</replaceable> stands "
+"for the version number you have checked out."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:656
+#, no-c-format
+msgid ""
+"<emphasis>Note for SuSE users: </emphasis> here you have to specify the "
+"directory <filename>/usr/src/packages</filename> instead of <filename>/usr/"
+"src/redhat</filename> too!"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:663
+#, no-c-format
+msgid ""
+"Assuming that you are in the root of where you checked out from SVN, do the "
+"following to create a Makefile, the &kapp; package and install it. If you "
+"already have a version of &kapp; installed, please remove it first or use "
+"<command>rpm -U</command> instead of <command>rpm -i</command> for updating "
+"instead of installing."
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:670
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>mkdir /tmp/kwave-build</command>\n"
+"<prompt>% </prompt><command>cd /tmp/kwave-build</command>\n"
+"<prompt>% </prompt><command>cmake <replaceable>$HOME/src/kwave</"
+"replaceable></command>\n"
+"<prompt>% </prompt><command>make rpm</command>\n"
+"<prompt>% </prompt><command>rpm -ivh /usr/src/redhat/BUILD/<replaceable>"
+"[arch]/kwave-XXX.[arch].rpm</replaceable></command>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:673
+#, no-c-format
+msgid ""
+"If you still have problems with <command>make rpm</command>, you will find "
+"the tar.gz archive that was produced in <filename>/tmp</filename>. Please "
+"follow the instructions in the <link linkend=\"manual_rpm_creation"
+"\">previous</link> chapter."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:689
+#, no-c-format
+msgid "Building CPU optimized packages"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:691
+#, no-c-format
+msgid ""
+"If you are owner of a Pentium, an AMD K6, Athlon or Athlon-XP CPU, you might "
+"want to use compiler optimizations to compile your version of &kapp; that is "
+"running some percents faster. The gain in speed will be up to 30% on some "
+"systems, whereas the functions dealing with signal manipulation and all "
+"functions that do complex time-frequency operations (like FFT and Sonagram) "
+"will profit most from it."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:699
+#, no-c-format
+msgid ""
+"You do not need to understand much about programming for using an optimized "
+"compiler to compile &kapp;, but maybe you will need some time to get the "
+"compiler itself working and installed."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:706
+#, no-c-format
+msgid "RPM optimizations"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:708
+#, no-c-format
+msgid ""
+"You can easily compile the RPM package optimized for Athlon, Athlon-XP, "
+"Pentium and Pentium Pro (and some other CPUs) by using some defines in your "
+"<filename>rpmrc</filename> file. You can either modify your system's "
+"<filename>rpmrc</filename> file in <filename>/usr/lib/rpm</filename> or the "
+"<filename>.rpmrc</filename> file in your home directory. There you can "
+"specify option lines like these: <screen width=\"40\" format=\"linespecific"
+"\">\n"
+"<userinput moreinfo=\"none\">optflags: i586 -O2 -march=pentium -DNDEBUG -"
+"fomit-frame-pointer</userinput>\n"
+"<userinput moreinfo=\"none\">optflags: i686 -O2 -march=pentiumpro -DNDEBUG -"
+"fomit-frame-pointer</userinput>\n"
+"<userinput moreinfo=\"none\">optflags: athlon -O2 -march=athlon -DNDEBUG -"
+"fomit-frame-pointer</userinput>\n"
+"<userinput moreinfo=\"none\">optflags: k6 -O3 -march=k6 -DNDEBUG -fomit-"
+"frame-pointer</userinput>\n"
+"<userinput moreinfo=\"none\">optflags: k7 -O3 -march=athlon-xp -DNDEBUG -"
+"fomit-frame-pointer</userinput>\n"
+"</screen> (I found those nice tricks at <ulink url=\"http://www.keywarrior."
+"net/duesti/rpmopt.de.html\"> http://www.keywarrior.net/duesti/rpmopt.en."
+"html</ulink>. Thanks to Matthias Düsterhöft!)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:728
+#, no-c-format
+msgid ""
+"This means that on an <literal>k7</literal> architecture the rpm package "
+"will be compiled using <literal>-O3 -march=athlon-xp -DNDEBUG -fomit-frame-"
+"pointer</literal> as compiler option and so on, you might extend or adapt "
+"these to your own needs. The settings apply to all of the sections before in "
+"all places where <command>rpmbuild -ta</command> is used or where a binary "
+"RPM is to be created out of a source rpm using <command>rpmbuild --rebuild</"
+"command>."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:741
+#, no-c-format
+msgid ""
+"If <command>rpm</command> refuses to install your package because it seems "
+"not to fit to your computer's architecture, you can normally just install an "
+"optimized package by specifying the additional parameter <command>--"
+"ignorearch</command> and don't care."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:752
+#, no-c-format
+msgid "How to pass optimizer options to the compiler manually"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:753
+#, no-c-format
+msgid ""
+"The invocation of the compiler is quite simple. It normally is sufficient to "
+"set the environment variables <literal><symbol>CFLAGS</symbol></literal> and "
+"<literal><symbol>CXXFLAGS</symbol></literal> in the correct way and then "
+"compile as usual. For the best settings please consult the documentation or "
+"homepage of the corresponding compiler."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:761
+#, no-c-format
+msgid ""
+"If you build &kapp; from a source tree (unpacked tar.gz or from SVN) the "
+"flags need to be specidied before the call. For example:"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:765
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>CFLAGS=\"-O4 -march=athlon-xp -mcpu=athlon-xp -"
+"pipe -fomit-frame-pointer\" \\\n"
+"  CXXFLAGS=\"-O4 -march=athlon-xp -mcpu=athlon-xp -pipe -fomit-frame-pointer"
+"\" \\\n"
+"  cmake <replaceable>[source directory]</replaceable></command>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:769
+#, no-c-format
+msgid ""
+"If you re-build &kapp; from a source rpm package, please follow the "
+"instruction in the <link linkend=\"rpm_optimizations\">previous section</"
+"link>."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:785
+#, no-c-format
+msgid "Basics about digital audio"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:787
+#, no-c-format
+msgid ""
+"This chapter should give a short introduction about the basics of digital "
+"audio processing, without going too much into details. Of course this might "
+"be a bit incomplete, but if you have questions, you can ask at the &kapp; "
+"mailing list or consult some further literature."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:795
+#, no-c-format
+msgid "The analogue world"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:797
+#, no-c-format
+msgid ""
+"First of all, one must know that the world is <emphasis>analogue</emphasis> "
+"- but computers work <emphasis>digitally</emphasis>. So there are several "
+"ways to convert analogue audio to digital audio and back again. As the way "
+"from digital to analogue normally is the reversion of the way from analogue "
+"to digital, we only describe the way from analogue to digital."
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:811
+#, no-c-format
+msgid "<phrase>Conversion from sound to bits</phrase>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:814
+#, no-c-format
+msgid "<para>Conversion from sound to bits</para>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:816
+#, no-c-format
+msgid ""
+"Before continuing, analogue audio has to be transformed into electronic "
+"signals in order to find it's way into a computer. One common way to do this "
+"is by using a microphone and an amplifier. This combination gets sound "
+"(changes of air pressure) at it's input and a voltage at it's output. Higher "
+"amplitude of the pressure changes will be represented by higher voltages at "
+"the amplifier's output. This output is also called a <emphasis>'signal'</"
+"emphasis>. Instead of a microphone you can of course also imagine other "
+"sources of audio. And the \"amplifier\" can be the one that is integrated "
+"into your sound card, where you normally can't see it."
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:833
+#, no-c-format
+msgid "<phrase>Conversion to electronic signal</phrase>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:836
+#, no-c-format
+msgid "<para>Conversion to electronic signal</para>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:838
+#, no-c-format
+msgid ""
+"At this stage, the electrical signal has three limitations that one should "
+"keep in mind:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:842
+#, no-c-format
+msgid ""
+"The <emphasis>amplitude</emphasis> (volume) is limited to some maximum "
+"level. This is a consequence of the electronic (amplifiers) that are only "
+"able to handle voltages within some specific range. That's no problem as "
+"long as sounds are not too loud. In that case the signal would be "
+"<emphasis>clipped</emphasis>, which means that the electrical signal will "
+"run against it's margins and the result will be disturbed."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:852
+#, no-c-format
+msgid ""
+"The <emphasis>frequency range</emphasis> is also limited. Due to the "
+"mechanical constrains of microphones and the limited frequency range of "
+"amplifiers, a signal's frequency range is limited. There are no hard borders "
+"besides which the sound abruptely disappears, but below some low and above "
+"some higher frequency the amplitude of the signal starts to decrease more "
+"and more. The existance of a maximum frequency can be easily understood as a "
+"limited speed of the electrical signal to rise and fall. By using high "
+"quality amplifiers and microphones, the limits can be spread into ranges "
+"where the human ear is no longer able to hear their results and thus get out "
+"of interest. The human ear normally is not able to hear sound above 20 kHz."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:867
+#, no-c-format
+msgid ""
+"The signal contains <emphasis>noise</emphasis>. Noise is the most ugly enemy "
+"of everyone who has to handle audio signals in any way. Noise is a typical "
+"analogue effect, that makes the audio signal \"unsharp\" and disturbed, it "
+"is always present and cannot be avoided. One can only try to use high "
+"quality components that produce as low noise as possible, so that one can't "
+"hear it. Normally noise has a certain volume, so that the interesting sound "
+"should be much louder in comparism to the noise. This is called the "
+"<emphasis>signal to noise ratio (SNR)</emphasis>, the higher it is the "
+"better the sound's quality will be. Sounds that have lower volume than the "
+"noise cannot be heart."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:886
+#, no-c-format
+msgid "Digitalization"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:888
+#, no-c-format
+msgid ""
+"When we want to store and play audio in a computer, we must convert the "
+"analogue sound into digital data first. This process is called "
+"<emphasis>digitalization</emphasis>. It converts an electronic signal into a "
+"sequence of digital values."
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:899
+#, no-c-format
+msgid "<phrase>Digitalization of the electronic signal</phrase>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:902
+#, no-c-format
+msgid "<para>Digitalization of the electronic signal</para>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:904
+#, no-c-format
+msgid ""
+"The conversion can be understood as a repetitive measurement of the "
+"electonic signal's value at certain time, thus taking a <emphasis>sample</"
+"emphasis> of the signal. The result is then encoded as a digital value."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:910
+#, no-c-format
+msgid ""
+"The sampling could be done in arbitrary distances or in constant intervals. "
+"The later method is much easier to handle, and thus it is normally used, "
+"with a constant rate - the so-called <emphasis>sample rate</emphasis>. Usual "
+"sample rates are 8000, 11025, 22050, and 44100 samples per second. In "
+"practice sample rates are also given as frequencies, in Hz or kHz."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:918
+#, no-c-format
+msgid ""
+"The sample rate limts the highest frequency a digitized signal can "
+"represent. Due to Shannon's theoreme the highest usable frequency is half of "
+"the sample rate, so with 44.1 kHz sample rate you cannot sample signals with "
+"more than 22 kHz. To avoid a violation of that half-sample rate rule, your "
+"soundcard already has built-in filters that filter away frequencies that are "
+"higher than half of the used sample rate."
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:932
+#, no-c-format
+msgid "<phrase>Sampled signal</phrase>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:935
+#, no-c-format
+msgid "<para>Sampled signal</para>"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:939
+#, no-c-format
+msgid "Sample Encoding"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:941
+#, no-c-format
+msgid ""
+"The result of the digital sampling process is a sequence of single "
+"<emphasis>samples</emphasis>. One sample is a digital representation of a "
+"signal's value at a certain time."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:946
+#, no-c-format
+msgid ""
+"The value of a sample can be interpreted and encoded in several ways. The "
+"simplest one is <emphasis>linear</emphasis> encoding. This means that each "
+"sample's value directly represents the analogue signal's value multiplied "
+"with a constant factor. This is easy to handle, but has the disadvantage "
+"that noise will be audibles especially on low amplitudes, where it disturbes "
+"most, and less audible on high amplitudes, where it is less audible."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:955
+#, no-c-format
+msgid ""
+"One way to reduce the influence of noise is <emphasis>non-linear</emphasis> "
+"encoding. This means that lower amplitudes are amplified before processing. "
+"As lower amplitudes are amplified, their distance from noise increases and "
+"the quality improves. The most common methods for this are <emphasis>A-Law</"
+"emphasis> and <emphasis>U-Law</emphasis> encoding - some standardized "
+"logarithmic amplification curves, used in digital telephony (ITU G.711 "
+"standard)."
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:969
+#, no-c-format
+msgid "<phrase>Nonlinear Encoding</phrase>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:972
+#, no-c-format
+msgid "<para>Nonlinear Encoding</para>"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:975
+#, no-c-format
+msgid "Sample Formats"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:977
+#, no-c-format
+msgid ""
+"Samples can be stored in different formats and precisions. The most common "
+"ones are integer (fixed-point) formats, that store values with "
+"<emphasis>fixed quantisations</emphasis>. Depending on where the zero line "
+"is defined, it has to be destinguished between <emphasis>unsigned</emphasis> "
+"(only positive values, \"zero line\" is at half of the numeric range) and "
+"<emphasis>signed</emphasis> (positive and negative values) integer formats."
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:992
+#, no-c-format
+msgid "<phrase>Signed Format</phrase>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:995
+#, no-c-format
+msgid "<para>Signed Format</para>"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1001
+#, no-c-format
+msgid "<phrase>Unsigned Format</phrase>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1004
+#, no-c-format
+msgid "<para>Unsigned Format</para>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1005
+#, no-c-format
+msgid ""
+"As the quantisation loses some accuracy, it produces noise, the so-called "
+"<emphasis>quantisation noise</emphasis>. That kind of noise has more effect "
+"on low amplitudes, so this method of storing samples is not optimal, but "
+"quite easy and very fast to handle (computers are fast in calculating with "
+"fixed point numbers)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1013
+#, no-c-format
+msgid ""
+"The second way of encoding samples is with <emphasis>floating point</"
+"emphasis> numbers. With floating point numbers, noise is spread nearly equal "
+"over all ranges of amplitudes and has advantages especially on low "
+"ampliudes. However, this format is much slower when used for processing "
+"(computers are much slower on calculating with floating point values in "
+"comparison to fixed point numbers)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1021
+#, no-c-format
+msgid ""
+"&kapp; internally uses <emphasis>signed integer</emphasis> format with 24 "
+"bit precision, stored in 32 bit integers. This has the disadvantage of "
+"higher memory consumption when processing files with lower precision (e.g. 8 "
+"bits), but processing 32 bit numbers is very fast and also leaves some "
+"reserves for internal calculations, as only 24 bits are normally used."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1039
+#, no-c-format
+msgid "Using &kapp;"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1040
+#, no-c-format
+msgid ""
+"Here is a little screenshot of the &kapp; main window, so that you get an "
+"impression what &kapp; looks like..."
+msgstr ""
+
+#. Tag: screeninfo
+#: help_en-work.docbook:1046
+#, no-c-format
+msgid "Here's a screenshot of &kapp;"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1054
+#, no-c-format
+msgid "Screenshot of the Main Window"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1063
+#, no-c-format
+msgid "Memory Setup"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1065
+#, no-c-format
+msgid ""
+"When using &kapp; for the first time, you should go to the memory setup "
+"dialog an modify the settings to be suitable for yor needs and the installed "
+"memory of your computer. You can reach it under <menuchoice> "
+"<guimenu>Options</guimenu><guimenuitem>Memory...</guimenuitem> </menuchoice>."
+msgstr ""
+
+#. Tag: screeninfo
+#: help_en-work.docbook:1075
+#, no-c-format
+msgid "Here's a screenshot of &kapp;'s memory setup dialog"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1083
+#, no-c-format
+msgid "Screenshot of the Memory Setup Dialog"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1088
+#, no-c-format
+msgid ""
+"&kapp; is able to use two types of memory: <emphasis>physical</emphasis> and "
+"<emphasis>virtual</emphasis> memory."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1092
+#, no-c-format
+msgid ""
+"<emphasis>Physical memory</emphasis> is the memory (RAM) that is installed "
+"in your computer. You should limit the usage of physical memory to some "
+"reasonable size, as a rule of thumb, half of the installed memory should be "
+"ok. If you set the limit too high, Linux will take memory from other "
+"applications, which means that it swaps out memory of other programs to the "
+"harddisk (swap), which is rather slow. If you set the limit too low, you "
+"might lose some performance when working with big files, because you use "
+"less of the fast physical memory than you could."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1103
+#, no-c-format
+msgid ""
+"If you enable <emphasis>virtual memory</emphasis>, &kapp; is able to load "
+"and process files that are bigger than the amount of real installed physical "
+"memory. &kapp; does this by using temporary files in a configurable "
+"directory, which is much faster and more cooperative to other applications "
+"than using the operating system's swapping. The directory that you configure "
+"should be on your local hard disk."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1119
+#, no-c-format
+msgid "Command Line"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1121
+#, no-c-format
+msgid ""
+"If you start &kapp; from the command line, you can specify a list of files "
+"that should be opened. The first specified file will be opened first, then "
+"the other files. Each file will be opened in an own new window of the same "
+"&kapp; instance. If you specify wildcards, you can open a large number of "
+"files at once."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1128
+#, no-c-format
+msgid ""
+"For example, the following command starts a &kapp; and opens all sounds of "
+"the KDE window manager, each in a new window:"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:1131
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>kwave <filename>/usr/share/sounds/KDE_Window*."
+"wav</filename></command>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1134
+#, no-c-format
+msgid ""
+"In addition to a list of files, you can specify a list of <emphasis>Xt "
+"toolkit</emphasis> options like <literal>-geometry</literal> for specifying "
+"the size and/or position of the first opened &kapp; window and or <literal>-"
+"display</literal> for starting the &kapp; on a different display."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1142
+#, no-c-format
+msgid ""
+"For example, the following command starts a &kapp; window with an initial "
+"width of 600 pixels and a height of 400 pixels, with the right border "
+"positioned 30 pixels away from the right and 0 pixels away form the top of "
+"the screen."
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:1147
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>kwave <parameter>-geometry 600x400-30+0</"
+"parameter></command>"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1155
+#, no-c-format
+msgid "Opening and Saving files"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1157
+#, no-c-format
+msgid ""
+"Opening files with &kapp; works like in most other applications, you can"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1161
+#, no-c-format
+msgid ""
+"specify a list of files on the <link linkend=\"command_line\">command line</"
+"link> when starting &kapp;,"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1163
+#, no-c-format
+msgid ""
+"open an empty &kapp; window (for example with <menuchoice> "
+"<shortcut><keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo></"
+"shortcut> <guimenu>File</guimenu><guimenuitem>New...</guimenuitem> </"
+"menuchoice> ) and put a file into it via <link linkend=\"drag_and_drop"
+"\">drag and drop</link>, or you can"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1171
+#, no-c-format
+msgid ""
+"open a file through the menu with <menuchoice> "
+"<shortcut><keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo></"
+"shortcut> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </"
+"menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1177
+#, no-c-format
+msgid ""
+"or one of the last recently opened files under <menuchoice> <guimenu>File</"
+"guimenu><guimenuitem>Open Recent</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1183
+#, no-c-format
+msgid ""
+"save the current file with <menuchoice> <shortcut><keycombo><keycap>Ctrl</"
+"keycap><keycap>S</keycap></keycombo></shortcut> <guimenu>File</"
+"guimenu><guimenuitem>Save</guimenuitem> </menuchoice>,"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1190
+#, no-c-format
+msgid ""
+"save under a different name with <menuchoice> "
+"<shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>S</"
+"keycap></keycombo></shortcut> <guimenu>File</guimenu><guimenuitem>Save</"
+"guimenuitem><guimenuitem>As...</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1197
+#, no-c-format
+msgid ""
+"save all areas that are separated by markers, each one to an own file, with "
+"<menuchoice> <guimenu>File</guimenu><guimenuitem>Save</"
+"guimenuitem><guimenuitem>Blocks...</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1204
+#, no-c-format
+msgid ""
+"or only the current selection with <menuchoice> <guimenu>File</"
+"guimenu><guimenuitem>Save</guimenuitem><guimenuitem>Selection...</"
+"guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1213
+#, no-c-format
+msgid "Supported File formats"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1215
+#, no-c-format
+msgid "&kapp; supports the following file formats:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1221
+#, no-c-format
+msgid ""
+"The favourite file format of &kapp; is (like you can guess from the name) "
+"<filename>.wav</filename>. This format is very common to other \"operating "
+"systems\" and also is commonly used within the KDE environment."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1226
+#, no-c-format
+msgid ""
+"The second format that &kapp; supports is \"ASCII\". You can export to "
+"ASCII, but currently not import from it (this is currently not implemented). "
+"Please be aware that storing in this format might produce very large files! "
+"The file format will be described <link linkend=\"ascii_format\">below</"
+"link>."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1233
+#, no-c-format
+msgid ""
+"<filename>.mp3</filename> and <filename>.mp2</filename> import is available "
+"through <ulink url=\"http://www.mars.org/home/rob/proj/mpeg/\">libmad</"
+"ulink> for the MP3 decoding in combination with <ulink url=\"http://www."
+"id3lib.org/\">id3lib</ulink> for decoding ID3 tags."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1242
+#, no-c-format
+msgid ""
+"Ogg/Vorbis (<filename>*.ogg</filename>) import and export. See <ulink url="
+"\"http://www.xiph.org\">http://www.xiph.org</ulink> for details."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1249
+#, no-c-format
+msgid ""
+"Additionally &kapp; supports many other common formats through the <ulink "
+"url=\"http://freeware.sgi.com/Installable/audiofile-0.2.3.html\">audiofile</"
+"ulink> plugin. You can import files like <filename>*.au</filename> and "
+"<filename>*.snd</filename> (NeXT,Sun Audio), <filename>*.aiff</filename> "
+"(Audio Interchange Format) and <filename>*.sf</filename> (Berkeley,IRCAM,"
+"Carl Sound Format)."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1265
+#, no-c-format
+msgid "Converting to and from .wav"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1267
+#, no-c-format
+msgid ""
+"The best way to work with formats other than those supported by &kapp; is to "
+"use an external converter program. A good set of tools for this is in the "
+"<ulink url=\"http://sox.sourceforge.net/\">SoX</ulink> package, they have "
+"also some nice documentation!"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1275
+#, no-c-format
+msgid ""
+"The plans for future include support for import and also export filters for "
+"more formats and maybe some filter that uses a user-defineable script with a "
+"call to an external filter, so that even formats not supported by "
+"<literal>SoX</literal> (like MP3) can be read and/or written."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1283
+#, no-c-format
+msgid "Format of ASCII files"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1284
+#, no-c-format
+msgid ""
+"The ASCII format is quite useful for scientific and educational purposes. "
+"Due to it's simple format, you can either write simple files on your own "
+"with a text editor or you can use the output of an other application and "
+"convert it into ASCII. As the format is <emphasis>really</emphasis> simple, "
+"you should not have big problems in writing a converter and most scientific "
+"applications use to have some kind of their own ASCII format for export."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1296
+#, no-c-format
+msgid ""
+"The format of an ASCII file is quite simple and has the following rules:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1299
+#, no-c-format
+msgid ""
+"At the start of the file comes a block of properties, with one property per "
+"line."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1303
+#, no-c-format
+msgid "Each property line starts with <literal>##</literal>."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1306
+#, no-c-format
+msgid ""
+"After the properties comes a list of samples, with one sample per line. When "
+"using multiple channels, the samples are separated by commas."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1310
+#, no-c-format
+msgid ""
+"Lines might end with a carriage return and/or a line feed character (so DOS "
+"files are supported too). But when saving, files will always be saved with "
+"line feed character as the end of the line."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1316
+#, no-c-format
+msgid ""
+"Empty lines and characters after a <literal>#</literal> are treated as "
+"comments and are ignored."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1320
+#, no-c-format
+msgid ""
+"Values can be are given in any format that the C library of your system is "
+"able to read and interprete as a floating point or integer number. But when "
+"saving, &kapp; will save as in signed integer format with a 24 bit range."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1326
+#, no-c-format
+msgid ""
+"All values are expected to be in signed format. So if you import a file with "
+"only positive values, you will only see samples that are above the zero line."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1331
+#, no-c-format
+msgid ""
+"When importing, values can be specified in any range, &kapp; always does a "
+"first pass over the file to get the highest absolute value and defines that "
+"value as \"100%\" before really reading in the file and scaling it."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1337
+#, no-c-format
+msgid "Internally all values are stored with 24 bit precision (signed)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1343
+#, no-c-format
+msgid ""
+"Here is an example of a simple ASCII file that represents a sine wave with "
+"eleven samples:"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1347
+#, no-c-format
+msgid "content of an ASCII file with a single sine wave"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:1348
+#, no-c-format
+msgid ""
+"## 'rate'=44100\n"
+"## 'tracks'=2\n"
+"## 'bits'=16\n"
+"## 'length'=11\n"
+"## 'Date'='2007-04-22'\n"
+"## 'Software'='Kwave-0.7.9 for KDE 3.5.5'\n"
+"  5930496,   5930496 #            0\n"
+"        0,   8388352 #            1\n"
+" -5930752,   5930496 #            2\n"
+" -8388608,         0 #            3\n"
+" -5930752,  -5930752 #            4\n"
+"        0,  -8388608 #            5\n"
+"  5930496,  -5930752 #            6\n"
+"  8388352,         0 #            7\n"
+"  5930496,   5930496 #            8\n"
+"        0,   8388352 #            9\n"
+" -5930752,   5930496 #           10\n"
+"# EOF"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1358
+#, no-c-format
+msgid "Creating a New File"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1360
+#, no-c-format
+msgid ""
+"You can create a new and empty file menu under <menuchoice> <guimenu>File</"
+"guimenu><guimenuitem>New...</guimenuitem> </menuchoice>."
+msgstr ""
+
+#. Tag: screeninfo
+#: help_en-work.docbook:1368
+#, no-c-format
+msgid "Here's a screenshot of &kapp;'s new file dialog"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1376
+#, no-c-format
+msgid "Screenshot of the File New Dialog"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1381
+#, no-c-format
+msgid ""
+"You can select the sample rate, resolution in bits per sample and the number "
+"of tracks. Per default the file format will be \".wav\", but it can still be "
+"changed at the time when the file is saved."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1386
+#, no-c-format
+msgid ""
+"The length of the new signal can be set by time (hours, minutes, seconds) or "
+"by the number of samples. Additionally you can select it relative to the "
+"highest possible length, which is limited by the available memory and "
+"&kapp;'s internal limit (2 GB)."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1398
+#, no-c-format
+msgid "Recording"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1400
+#, no-c-format
+msgid ""
+"&kapp; is able to record audio data from various sources, with all sample "
+"rates, sample formats and other modes that your sound hardware supports. "
+"Currently &kapp; records through the old OSS sound interface, and since "
+"v0.7.4 also the newer and more powerful ALSA interface that is the preferred "
+"choice for linux kernel 2.6."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1407
+#, no-c-format
+msgid ""
+"The recording can be reached from the menu under <menuchoice> <guimenu>File</"
+"guimenu><guimenuitem>Record</guimenuitem> </menuchoice>."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1414
+#, no-c-format
+msgid ""
+"Here is a screenshot of the &kapp; record dialog, showing the first page "
+"with the recording controls during a running recording session. Like in most "
+"dialogs of &kapp; you can get some help or see tooltips on the controls."
+msgstr ""
+
+#. Tag: screeninfo
+#: help_en-work.docbook:1422
+#, no-c-format
+msgid "Here's a screenshot of &kapp;'s record dialog"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1430
+#, no-c-format
+msgid "Screenshot of the Record Dialog"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1436
+#, no-c-format
+msgid "Here you have the following controls:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1439
+#, no-c-format
+msgid ""
+"<guilabel>Pre-Record:</guilabel> If the pre-recording feature of &kapp; is "
+"enabled and the recording is startet, &kapp; records into an internal buffer "
+"which is some seconds long. If you press the <guibutton>Record</guibutton> "
+"( <inlinemediaobject> <imageobject> <imagedata fileref=\"krec_record.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>record button</phrase> "
+"</textobject> </inlinemediaobject> ) button again, then the recording really "
+"starts, and also keeps the already pre-recorded data. This is useful for "
+"example if you want to record your favorite song from radio, but you "
+"recognize too late that the song has started. In this case you can still "
+"press the record button and get the start of the song from what &kapp; has "
+"already pre-recorded before, so that you will no longer miss a start."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1459
+#, no-c-format
+msgid ""
+"<guilabel>Record-Time:</guilabel> If the length of the recording should be "
+"limited to some time, you can activate this setting and select a time in "
+"hours, minutes, seconds for your recording. If this option is not enabled, "
+"the recording runns until you press the <guibutton>Stop</guibutton> "
+"(<inlinemediaobject><imageobject> <imagedata fileref=\"record_stop.png\" "
+"format=\"PNG\"/> </imageobject><textobject><phrase>stop button</phrase></"
+"textobject> </inlinemediaobject>) button."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1469
+#, no-c-format
+msgid ""
+"<guilabel>Record Trigger:</guilabel> If enabled, the recording starts only "
+"if the volume of the input goes over a certain limit, which can be defined "
+"from 0 to 100% of the highest possible input volume. This is useful if you "
+"do not want to record leading silence."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1476
+#, no-c-format
+msgid ""
+"The <guibutton>New</guibutton> (<inlinemediaobject><imageobject> <imagedata "
+"fileref=\"record_new.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase>new button</phrase></textobject> </"
+"inlinemediaobject>) button is active when the recording is not running or is "
+"finished, to discard the current file content and start again."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1484
+#, no-c-format
+msgid ""
+"The <guibutton>Stop</guibutton> (<inlinemediaobject><imageobject> <imagedata "
+"fileref=\"record_stop.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase>stop button</phrase></textobject> </"
+"inlinemediaobject>) button is active when the recording or pre-recording is "
+"running or &kapp; is waiting for the trigger. If pressed, the current "
+"progress will be stopped."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1492
+#, no-c-format
+msgid ""
+"The <guibutton>Pause</guibutton> (<inlinemediaobject><imageobject> "
+"<imagedata fileref=\"record_pause.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase>pause button</phrase></textobject> </"
+"inlinemediaobject>) button is active when the recording or pre-recording is "
+"running. The first time you press it, the rcording will be halted and the "
+"button starts blinking. When you press it again the button will stop "
+"blinking and recording will continue immediately, without waiting for a "
+"trigger."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1502
+#, no-c-format
+msgid ""
+"The <guibutton>Record</guibutton> (<inlinemediaobject><imageobject> "
+"<imagedata fileref=\"krec_record.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase>record button</phrase></textobject> </"
+"inlinemediaobject>) button starts the recording and/or prerecording, "
+"depending on the features enabled above:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1509
+#, no-c-format
+msgid ""
+"If neither prerecording nor trigger level are used, the recording starts as "
+"soon as you press the record button."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1514
+#, no-c-format
+msgid ""
+"If prerecording is not used and a trigger level is set, the first press will "
+"let &kapp; wait for the trigger level to be reached. While waiting for a "
+"trigger, you can force the recording to start immediately by pressing the "
+"record button again, otherwise the recording will start automatically when "
+"the trigger level has been reached."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1522
+#, no-c-format
+msgid ""
+"If prerecording is enabled, the first press starts only the prerecording and "
+"the second press really starts the recording."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1536
+#, no-c-format
+msgid "Playback"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1538
+#, no-c-format
+msgid ""
+"Depending on the compilation options &kapp; is able to play sounds trough "
+"one of the following playback methods:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1543
+#, no-c-format
+msgid ""
+"ALSA (Advanced Linux Sound Architecture): Supercedes OSS, supports more "
+"features and more hardware. Might collide with KDE or other applications "
+"like OSS does, but has a plugin called \"dmix\" as a way out. Newer versions "
+"of ALSA use a dmix like plugin per default, so this should the best choice "
+"for you!"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1551
+#, no-c-format
+msgid ""
+"OSS (Open Sound System): The oldest linux implementation, capable of mono "
+"and stereo output. Deprecated since linux kernel 2.6, but still wide spread. "
+"Might collide with KDE or other sound applications, only one application at "
+"a time can use OSS playback !"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1560
+#, no-c-format
+msgid ""
+"Before trying to play sounds, you should take a look on the playback "
+"configuration dialog:"
+msgstr ""
+
+#. Tag: screeninfo
+#: help_en-work.docbook:1566
+#, no-c-format
+msgid "Here's a screenshot of &kapp;'s playback setup dialog"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1574
+#, no-c-format
+msgid "Screenshot of the Playback Setup Dialog"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1580
+#, no-c-format
+msgid ""
+"Currently &kapp; supports only 8 and 16 bit playback, with mono or stereo "
+"output through the OSS interface, but many also all modes your sound "
+"hardware supports through the ALSA interface."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1585
+#, no-c-format
+msgid ""
+"If your sound file uses more or less channels than the playback allows, all "
+"channels will be mixed together during playback. For example if you have a "
+"file with three channels and you use stereo playback, the left channel will "
+"play channel 0 (upper) and half of channel 1 (middle), the right channel "
+"will play the half of channel 1 (middle) and channel 2 (lower)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1593
+#, no-c-format
+msgid ""
+"For getting a smooth playback without interruptions, you should also set the "
+"buffer size to an appropriate value. If you encounter problems with "
+"interrupted playback, you should increase the buffer size here. But the "
+"bigger you set the buffer, the bigger is the latency between the audible "
+"sound and the display of the playback position in the signal display."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1601
+#, no-c-format
+msgid ""
+"The playback settings dialog also provides a button for playing a simple "
+"test sound. You should hear a 440Hz tone that wanders over all speakers, "
+"from one to the next."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1606
+#, no-c-format
+msgid ""
+"Once you have configured playback, you can use the playback controls of the "
+"&kapp; main window or through the <menuchoice><guimenu>Play</guimenu></"
+"menuchoice> menu or with keyboard shortcuts:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1612
+#, no-c-format
+msgid ""
+"<menuchoice> <shortcut><keycombo><keycap>P</keycap></keycombo></shortcut> "
+"<guimenu>Play</guimenu><guimenuitem>Start</guimenuitem> </menuchoice>: Start "
+"playback of the current selection from it's beginning or the whole file from "
+"the current cursor position if nothing was selected. Play only once."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1620
+#, no-c-format
+msgid ""
+"<menuchoice> <guimenu>Play</guimenu><guimenuitem>Loop</guimenuitem> </"
+"menuchoice>: Like before, but repeat in a loop."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1625
+#, no-c-format
+msgid ""
+"<menuchoice> <shortcut><keycombo><keycap>Space</keycap></keycombo></"
+"shortcut> <guimenu>Play</guimenu><guimenuitem>Pause</guimenuitem> </"
+"menuchoice>: Pause the playback at the current position. Only available when "
+"the playback is running."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1632
+#, no-c-format
+msgid ""
+"<menuchoice> <shortcut><keycombo><keycap>Space</keycap></keycombo></"
+"shortcut> <guimenu>Play</guimenu><guimenuitem>Continue</guimenuitem> </"
+"menuchoice>: Continue the playback from the position where it has been "
+"paused. Only available if the playback is paused."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1639
+#, no-c-format
+msgid ""
+"<menuchoice> <shortcut><keycombo><keycap>Esc</keycap></keycombo></shortcut> "
+"<guimenu>Play</guimenu><guimenuitem>Stop</guimenuitem> </menuchoice>: Stop "
+"the playback, go back to the start of the selection."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1653
+#, no-c-format
+msgid "File Properties"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1655
+#, no-c-format
+msgid ""
+"&kapp; is able to handle several meta information that is stored within an "
+"audio file. It tries to import and export as much of these informations as "
+"possible. For example, if you import an MP3 file with ID3 tags, you can keep "
+"those informations when exporting to a Wave file. If &kapp; would lose meta "
+"information when saving, it shows a warning."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1663
+#, no-c-format
+msgid ""
+"You can view and modify the meta information under <menuchoice> "
+"<guimenu>Edit</guimenu><guimenuitem>File Properties...</guimenuitem> </"
+"menuchoice>. There you can also change things like sample format, resolution "
+"and compression."
+msgstr ""
+
+#. Tag: screeninfo
+#: help_en-work.docbook:1672
+#, no-c-format
+msgid "Here's a screenshot of &kapp;'s file properties dialog"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1680
+#, no-c-format
+msgid "Screenshot of the File Properties Dialog"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1691
+#, no-c-format
+msgid "Zooming and navigating"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1693
+#, no-c-format
+msgid ""
+"&kapp; provides several ways to zoom and navigate, using keyboard shortcuts, "
+"menu commands, toolbar buttons and by using the mouse. The following "
+"sections should give an overview on how to use all of these functions."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1700
+#, no-c-format
+msgid "Zooming in and out"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1704
+#, no-c-format
+msgid ""
+"<emphasis>zoom to whole signal:</emphasis> selects a zoom factor that makes "
+"the whole signal visible in the current window."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1709
+#, no-c-format
+msgid ""
+"menu entry: <menuchoice> <guimenu>View</guimenu><guimenuitem>Zoom to whole "
+"signal</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1715 help_en-work.docbook:1735
+#: help_en-work.docbook:1755 help_en-work.docbook:1775
+#, no-c-format
+msgid "toolbar button:"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1718
+#, no-c-format
+msgid "zoom all button"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1724
+#, no-c-format
+msgid ""
+"<emphasis>zoom to 100%:</emphasis> zooms in up to a scale where on sample is "
+"represented by on pixel on the screen."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1729
+#, no-c-format
+msgid ""
+"menu entry: <menuchoice> <guimenu>View</guimenu><guimenuitem>Zoom to 100%</"
+"guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1738
+#, no-c-format
+msgid "zoom to 100% button"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1744
+#, no-c-format
+msgid ""
+"<emphasis>zoom in:</emphasis> zooms in to see more details, magnifies by "
+"factor 3."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1748
+#, no-c-format
+msgid ""
+"menu entry / keyboard shortcut: <menuchoice> "
+"<shortcut><keycombo><keycap>Ctrl</keycap><keycap>+</keycap></keycombo></"
+"shortcut> <guimenu>View</guimenu><guimenuitem>Zoom In</guimenuitem> </"
+"menuchoice>"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1758
+#, no-c-format
+msgid "zoom in button"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1764
+#, no-c-format
+msgid ""
+"<emphasis>zoom out:</emphasis> zooms in to see less details, shrinks by "
+"factor 3."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1768
+#, no-c-format
+msgid ""
+"menu entry / keyboard shortcut: <menuchoice> "
+"<shortcut><keycombo><keycap>Ctrl</keycap><keycap>-</keycap></keycombo></"
+"shortcut> <guimenu>View</guimenu><guimenuitem>Zoom Out</guimenuitem> </"
+"menuchoice>"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1778
+#, no-c-format
+msgid "zoom out button"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1784
+#, no-c-format
+msgid ""
+"<emphasis>zoom selection:</emphasis> zooms to a factor where the current "
+"selection is completely visible in the current view."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1789
+#, no-c-format
+msgid ""
+"menu entry / keyboard shortcut: <menuchoice> "
+"<shortcut><keycombo><keycap>Ctrl</keycap><keycap>Space</keycap></keycombo></"
+"shortcut> <guimenu>View</guimenu><guimenuitem>Zoom to Selection</"
+"guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1806
+#, no-c-format
+msgid ""
+"<emphasis>select predefined zoom:</emphasis> select a zoom factor from the "
+"zoom combo box in the toolbar."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1815
+#, no-c-format
+msgid "Scrolling left and right"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1819
+#, no-c-format
+msgid ""
+"<emphasis>scroll left:</emphasis> scrolls to the start of the signal by 1/3 "
+"of the current view."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1823
+#, no-c-format
+msgid ""
+"menu entry / keyboard shortcut: <menuchoice> "
+"<shortcut><keycombo><keycap>cursor Left</keycap></keycombo></shortcut> "
+"<guimenu>View</guimenu><guimenuitem>Scroll left</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1832
+#, no-c-format
+msgid ""
+"<emphasis>scroll right:</emphasis> scrolls to the end of the signal by 1/3 "
+"of the current view."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1836
+#, no-c-format
+msgid ""
+"menu entry / keyboard shortcut: <menuchoice> "
+"<shortcut><keycombo><keycap>cursor right</keycap></keycombo></shortcut> "
+"<guimenu>View</guimenu><guimenuitem>Scroll right</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1845
+#, no-c-format
+msgid ""
+"<emphasis>previous page:</emphasis> scrolls to the position right before the "
+"current view (left)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1849
+#, no-c-format
+msgid ""
+"menu entry / keyboard shortcut: <menuchoice> "
+"<shortcut><keycombo><keycap>Page up</keycap></keycombo></shortcut> "
+"<guimenu>View</guimenu><guimenuitem>Previous Page</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1858
+#, no-c-format
+msgid ""
+"<emphasis>next page:</emphasis> scrolls to the position right after the "
+"current view (right)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1862
+#, no-c-format
+msgid ""
+"menu entry / keyboard shortcut: <menuchoice> "
+"<shortcut><keycombo><keycap>Page down</keycap></keycombo></shortcut> "
+"<guimenu>View</guimenu><guimenuitem>Next Page</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1871
+#, no-c-format
+msgid ""
+"<emphasis>to begin:</emphasis> scrolls the current view so that it starts at "
+"the beginning of the signal."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1876
+#, no-c-format
+msgid ""
+"menu entry / keyboard shortcut: <menuchoice> "
+"<shortcut><keycombo><keycap>Pos1</keycap></keycombo></shortcut> "
+"<guimenu>View</guimenu><guimenuitem>Begin</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1885
+#, no-c-format
+msgid ""
+"<emphasis>to end:</emphasis> scrolls the current view so that it ends at the "
+"end of the signal."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1889
+#, no-c-format
+msgid ""
+"menu entry / keyboard shortcut: <menuchoice> "
+"<shortcut><keycombo><keycap>End</keycap></keycombo></shortcut> "
+"<guimenu>View</guimenu><guimenuitem>End</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1901
+#, no-c-format
+msgid "Using the overview"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1903
+#, no-c-format
+msgid ""
+"The main screen of &kapp; shows a small <emphasis>overview</emphasis> of the "
+"whole signal above the horizontal scroll bar of the main window. This "
+"overview also provides some functionality for navigating:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1909
+#, no-c-format
+msgid ""
+"<emphasis>single click with left mouse button</emphasis>: directly move the "
+"current view to the clicked position."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1914
+#, no-c-format
+msgid ""
+"<emphasis>double click with left mouse button</emphasis>: directly move the "
+"current view to the clicked position and additionally zoom in."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1920
+#, no-c-format
+msgid ""
+"<emphasis>double click with left mouse button, with <keycap>shift</keycap> "
+"pressed</emphasis>: directly move the current view to the clicked position "
+"and additionally zoom out."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1931
+#, no-c-format
+msgid "Vertical zoom"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1932
+#, no-c-format
+msgid ""
+"You can zoom the current view vertically by pressing the <keycap>Ctrl</"
+"keycap> key and scrolling with the mouse wheel."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1943
+#, no-c-format
+msgid "How to select"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1945
+#, no-c-format
+msgid ""
+"&kapp; allows you to select a continuous range of samples as well as any "
+"combination of channels (if you edit a multi-channel file). By selecting a "
+"range of samples (time scope) all following commands will be limited to that "
+"range and by de-selecting a channel it's content will not be changed."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1952
+#, no-c-format
+msgid "Selecting channels"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1953
+#, no-c-format
+msgid ""
+"Selecting or de-selecting a channel is quite simple. Just click on the lamp "
+"symbol on the left side of the signal to toggle it's state:"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1962
+#, no-c-format
+msgid "green lamp"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1963
+#, no-c-format
+msgid "a green lamp means \"enabled\", whereas"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:1971
+#, no-c-format
+msgid "red lamp"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1972
+#, no-c-format
+msgid "a red lamp means \"disabled\"."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1976
+#, no-c-format
+msgid ""
+"Note: If a channel is de-selected it will also not be audible for playback!"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:1981
+#, no-c-format
+msgid "Selecting samples"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1983
+#, no-c-format
+msgid ""
+"If you select a range of samples in &kapp;, that range will be "
+"<emphasis>inclusive</emphasis>. That means that the first and the last "
+"selected sample both belong to the selection and will be used for the "
+"following actions. So even if you not selected a <emphasis>range</emphasis> "
+"but only a single sample, the selection will never be really \"empty\". So "
+"for example if you see no selected range, the \"delete\" function applies to "
+"that single sample."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1993
+#, no-c-format
+msgid ""
+"The easiest way of selecting a range of samples is just to do that with "
+"mouse. It works like you are used from other applications: just press the "
+"left mouse button at the point you want to let the selection start and "
+"release the button where you want it to end."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:1999
+#, no-c-format
+msgid ""
+"If you want to adjust or move the selection's start or end, you can move the "
+"mouse cursor near to the start or the end of the selection until it changes "
+"from the standard arrow cursor into the left-right arrow cursor and then "
+"press the left mouse button and adjust."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2005
+#, no-c-format
+msgid ""
+"You can also extend or shrink the selection to a specific point by holding "
+"down the shift button while klicking with the left mouse button. Depending "
+"on which border is nearer, the left or right border of the selection will be "
+"set to a new position."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2011
+#, no-c-format
+msgid ""
+"There are also some functions available via the menu and of course some "
+"keyboard shortcuts:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2015
+#, no-c-format
+msgid ""
+"select the whole signal: <menuchoice> <shortcut><keycombo><keycap>Ctrl</"
+"keycap><keycap>A</keycap></keycombo></shortcut> <guimenu>Edit</"
+"guimenu><guimenuitem>Selection</guimenuitem><guimenuitem>All</guimenuitem> </"
+"menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2022
+#, no-c-format
+msgid ""
+"remove any selection and select \"nothing\": <menuchoice> "
+"<shortcut><keycombo><keycap>N</keycap></keycombo></shortcut> <guimenu>Edit</"
+"guimenu><guimenuitem>Selection</guimenuitem><guimenuitem>Nothing</"
+"guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2029
+#, no-c-format
+msgid ""
+"the currently visible area: <menuchoice> <shortcut><keycombo><keycap>V</"
+"keycap></keycombo></shortcut> <guimenu>Edit</guimenu><guimenuitem>Selection</"
+"guimenuitem><guimenuitem>Visible</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2036
+#, no-c-format
+msgid ""
+"the next block of samples, starting one sample after the end of the current "
+"selection and with the same length: <menuchoice> "
+"<shortcut><keycombo><keycap>Shift</keycap><keycap>+</keycap></keycombo></"
+"shortcut> <guimenu>Edit</guimenu><guimenuitem>Selection</"
+"guimenuitem><guimenuitem>Next</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2044
+#, no-c-format
+msgid "(Hint: use the \"<keycap>+</keycap>\" key from the numeric keypad!)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2047
+#, no-c-format
+msgid ""
+"the previous block of samples, ending one sample before the start of the "
+"current selection and with the same length: <menuchoice> "
+"<shortcut><keycombo><keycap>Shift</keycap><keycap>-</keycap></keycombo></"
+"shortcut> <guimenu>Edit</guimenu><guimenuitem>Selection</"
+"guimenuitem><guimenuitem>Previous</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2055
+#, no-c-format
+msgid "(Hint: use the \"<keycap>-</keycap>\" key from the numeric keypad!)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2058
+#, no-c-format
+msgid ""
+"expand the selection to the start of the signal (first sample): <menuchoice> "
+"<shortcut><keycombo><keycap>Shift</keycap><keycap>Home</keycap></keycombo></"
+"shortcut> <guimenu>Edit</guimenu><guimenuitem>Selection</"
+"guimenuitem><guimenuitem>to start</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2065
+#, no-c-format
+msgid ""
+"expand the selection to the end of the signal (last sample): <menuchoice> "
+"<shortcut><keycombo><keycap>Shift</keycap><keycap>End</keycap></keycombo></"
+"shortcut> <guimenu>Edit</guimenu><guimenuitem>Selection</"
+"guimenuitem><guimenuitem>to end</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2073
+#, no-c-format
+msgid ""
+"expand the current selection left and right up to the next label (or start/"
+"end of the signal if there is none), starting at the current cursor "
+"position: <menuchoice> <shortcut><keycombo><keycap>E</keycap></keycombo></"
+"shortcut> <guimenu>Edit</guimenu><guimenuitem>Selection</"
+"guimenuitem><guimenuitem>Expand to labels</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2083
+#, no-c-format
+msgid ""
+"select the area between the next two labels that are right from the current "
+"selection or up to the end of the signal: <menuchoice> "
+"<shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>N</"
+"keycap></keycombo></shortcut> <guimenu>Edit</guimenu><guimenuitem>Selection</"
+"guimenuitem><guimenuitem>to next labels</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2091
+#, no-c-format
+msgid ""
+"select the area between the previous two labels that are left from the "
+"current selection or up to the start of the signal: <menuchoice> "
+"<shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>P</"
+"keycap></keycombo></shortcut> <guimenu>Edit</guimenu><guimenuitem>Selection</"
+"guimenuitem><guimenuitem>to previous labels</guimenuitem> </menuchoice>"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:2109
+#, no-c-format
+msgid "Clipboard"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2111
+#, no-c-format
+msgid ""
+"&kapp; since v0.8.1 uses the clipboard of KDE. This way it is possible to "
+"exchange audio data between different &kapp; windows. It might be possible "
+"as well to exchange data between &kapp; and other audio applications, "
+"depending on their ability to use the KDE clipboard."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2119
+#, no-c-format
+msgid ""
+"When copying data to the clipboard through the <literal>copy</literal> "
+"function &kapp; uses the mime type <literal>audio/vnd.wave</literal> as data "
+"format, conforming to <ulink url=\"http://www.faqs.org/rfcs/rfc2361.html"
+"\">RFC 2361</ulink> which is the same as the well known <literal>wav</"
+"literal> format. When pasting from the clipboard into &kapp; all data "
+"formats that are available as file import formats are supported, like for "
+"example Ogg/Vorbis, FLAC and so on."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:2136
+#, no-c-format
+msgid "Drag and Drop"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2138
+#, no-c-format
+msgid ""
+"&kapp; supports the KDE Drag and Drop protocol. This enables you to open "
+"files just by picking them up in a <command>konqueror</command> window or "
+"the Desktop and let them drop into a window of &kapp;."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2144
+#, no-c-format
+msgid ""
+"Please note that if you drop a file into a &kapp; window that already "
+"contains an opened file, the currently opened file will be closed first and "
+"then the file you dropped will be opened in it. If you don't want that, you "
+"should open a new empty &kapp; window first."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2151
+#, no-c-format
+msgid ""
+"You can also select a range of samples and drag or drop them into a &kapp; "
+"window. Per default the drag operation is done in <emphasis>move</emphasis> "
+"mode where the selected range is deleted from the original place and "
+"inserted at the drop position. By pressing the <keycap moreinfo=\"none"
+"\">Ctrl</keycap> key you can modify this and drag in <emphasis>copy</"
+"emphasis> mode instead."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:2264
+#, no-c-format
+msgid "Developer's Guide to &kapp;"
+msgstr ""
+
+#. Tag: phrase
+#: help_en-work.docbook:2275
+#, no-c-format
+msgid "under construction"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2278
+#, no-c-format
+msgid ""
+"Sorry, this chapter is still to be written... At the moment the source code "
+"is nearly completely documented with tags suitable with the KDE "
+"documentation tools. We currently prefer using <ulink url=\"http://www.stack."
+"nl/~dimitri/doxygen\">doxygen</ulink>. Maybe some day we will spend some "
+"time for writing a tool that converts the doxygen output into something we "
+"can include into the docbook source (the source this page has been built of)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2287
+#, no-c-format
+msgid ""
+"If you want to write a plugin, contribute something to this project (or "
+"maybe write the converter mentioned above), please feel free to contact one "
+"of the authors directly and / or subscribe to the &kapp; <link linkend="
+"\"mailing-list\">mailing list</link>. Help is always welcome!"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:2302
+#, no-c-format
+msgid "Adding support for a new Language"
+msgstr ""
+
+#. Tag: emphasis
+#: help_en-work.docbook:2307
+#, no-c-format
+msgid "make system:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2308
+#, no-c-format
+msgid ""
+"Edit the toplevel <filename>CMakeLists.txt</filename> and add a new entry to "
+"the list of languages. Look for the variable <literal><symbol>KWAVE_LINGUAS</"
+"symbol></literal> and add a line for the new language. Each entry consists "
+"of a pair with a language <emphasis>code</emphasis> and language "
+"<emphasis>name</emphasis>, like this: <command><replaceable>&lt;code&gt;</"
+"replaceable><literal>:</literal><replaceable>&lt;name&gt;</replaceable></"
+"command>. Example:"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:2317
+#, no-c-format
+msgid ""
+"<parameter>fr</parameter><literal>:</literal><parameter>Francais</parameter>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2319
+#, no-c-format
+msgid ""
+"The language code is a 2-letter code which is used for directories and "
+"filenames, as it is also used in KDE. The language name is used internally "
+"for the docbook online documentation and the online help only. For a list of "
+"available language codes and names, please refer to the documentation of the "
+"international standard <ulink url=\"http://www.loc.gov/standards/iso639-2/"
+"php/code_list.php\">ISO 639-2</ulink>."
+msgstr ""
+
+#. Tag: emphasis
+#: help_en-work.docbook:2330
+#, no-c-format
+msgid "user interface:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2331
+#, no-c-format
+msgid ""
+"Go to the source directory of &kapp; (not the build directory), change into "
+"the subdirectory <filename>po</filename> and copy the file <filename>kwave."
+"pot</filename> to the corresponding <filename>.po</filename> file of the "
+"language you want to add: <filename>\"<replaceable>&lt;code&gt;</"
+"replaceable>.po\"</filename>. After that you can translate the file using "
+"your favorite tool, like <filename>kbabel</filename>. Example:"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:2339
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>cd <parameter><replaceable>$HOME/src/kwave</"
+"replaceable></parameter></command>\n"
+"<prompt>% </prompt><command>cd <parameter>po</parameter></command>\n"
+"<prompt>% </prompt><command>cp <parameter>kwave.pot</parameter> "
+"<parameter><replaceable>fr.po</replaceable></parameter></command>\n"
+"<prompt>% </prompt><command>kbabel <parameter>fr.po</parameter></command>"
+msgstr ""
+
+#. Tag: emphasis
+#: help_en-work.docbook:2343
+#, no-c-format
+msgid "online help:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2344
+#, no-c-format
+msgid ""
+"This is similar to the procedure for the user interface, but requires some "
+"extra steps because the master file is in <literal>docbook</literal> format "
+"and the <filename>.pot</filename> template is a generated file. Go to the "
+"source directory of &kapp; (not the build directory), change into the "
+"subdirectory <filename>doc</filename> and create an empty <filename>.po</"
+"filename> file: <screen>\n"
+"<prompt>% </prompt><command>cd <parameter><replaceable>$HOME/src/kwave</"
+"replaceable></parameter></command>\n"
+"<prompt>% </prompt><command>cd <parameter>doc</parameter></command>\n"
+"<prompt>% </prompt><command>touch <parameter><replaceable>help_fr.po</"
+"replaceable></parameter></command>\n"
+"</screen> Then change your build directory (e.g. somewhere in <filename>/"
+"tmp</filename>), prepare for building and then generate the <filename>.pot</"
+"filename> template (you can safely ignore the error messages that come out "
+"at this stage). This themplate has to be copied to the <filename>.po</"
+"filename> file in the source directory of the online help. Example: "
+"<screen>\n"
+"<prompt>% </prompt><command>mkdir <parameter>/tmp/kwave-build</parameter></"
+"command>\n"
+"<prompt>% </prompt><command>cd <parameter>/tmp/kwave-build</parameter></"
+"command>\n"
+"<prompt>% </prompt><command>cmake <parameter><replaceable>$HOME/src/kwave</"
+"replaceable></parameter></command>\n"
+"<prompt>% </prompt><command>make doc</command>\n"
+"<prompt>% </prompt><command>cp <parameter>doc/help_en.pot</parameter> "
+"<parameter><replaceable>$HOME/src/kwave/doc/help_fr.po</replaceable></"
+"parameter></command>\n"
+"</screen> Now you can translate the <filename>.po</filename> file, like "
+"above:"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:2361
+#, no-c-format
+msgid ""
+"<prompt>% </prompt><command>cd <parameter><replaceable>$HOME/src/kwave</"
+"replaceable></parameter></command>\n"
+"<prompt>% </prompt><command>cd <parameter>doc</parameter></command>\n"
+"<prompt>% </prompt><command>kbabel <parameter><replaceable>help_fr.po</"
+"replaceable></parameter></command>"
+msgstr ""
+
+#. Tag: emphasis
+#: help_en-work.docbook:2365
+#, no-c-format
+msgid "screenshots:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2366
+#, no-c-format
+msgid ""
+"For the online documentation you also need screenshots that use the "
+"translated messages. This requires a built and installed &kapp; package, so "
+"you should follow the steps mentioned in the section about <link linkend="
+"\"manual_compilation\">Manual Compilation and installation</link>. Of course "
+"you <emphasis>must not</emphasis> pass the build option "
+"<literal>WITH_DOC=no</literal> or any other build option that removes "
+"functionality, otherwise you would not be able to get screenshots of "
+"components that you have disabled."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2375
+#, no-c-format
+msgid ""
+"For a list of screenshots you can look into one of the existing directories "
+"in the source tree, for example in <filename>$HOME/doc/de</filename>. All "
+"screenshots are in <emphasis><filename>.png</filename></emphasis> and should "
+"follow the <ulink url=\"http://l10n.kde.org/docs/screenshots.php\">KDE "
+"Documentation Screenshots Requirements</ulink>. Here in short:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2384
+#, no-c-format
+msgid "Window decoration: Plastik"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2387
+#, no-c-format
+msgid "Widget style: Plastik"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2390
+#, no-c-format
+msgid "Colors: KDE Default"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2393
+#, no-c-format
+msgid "Background: Flat color - Color must be white"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2396
+#, no-c-format
+msgid "Run X11 in 72dpi mode"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2399
+#, no-c-format
+msgid "Save the files in 8bpp"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2402
+#, no-c-format
+msgid "Try to keep the size of each file below 20kB"
+msgstr ""
+
+#. Tag: emphasis
+#: help_en-work.docbook:2408
+#, no-c-format
+msgid "desktop file:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2409
+#, no-c-format
+msgid ""
+"Add a <emphasis>Comment</emphasis> line for the new language to the file "
+"<filename>kwave/kwave.desktop.in</filename>. Please note that this file is "
+"UTF-8 encoded! Example:"
+msgstr ""
+
+#. Tag: screen
+#: help_en-work.docbook:2414
+#, no-c-format
+msgid ""
+"<literal>Comment[</literal><replaceable>fr</replaceable><literal>]=</"
+"literal><replaceable>Un éditeur de sons pour KDE</replaceable>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2419
+#, no-c-format
+msgid "Useful links:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2422
+#, no-c-format
+msgid ""
+"<ulink url=\"http://www.ietf.org/rfc/rfc3066.txt\">RFC 3066</ulink> Tags for "
+"the Identification of Languages"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2426
+#, no-c-format
+msgid ""
+"<ulink url=\"http://l10n.kde.org/\">KDE Localization</ulink> contains a lot "
+"of useful links for KDE translators."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2430
+#, no-c-format
+msgid ""
+"<ulink url=\"http://kbabel.kde.org/\">KBabel</ulink> is <emphasis>the</"
+"emphasis> standard tool that helps you translating <filename>.po</filename> "
+"files."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2435
+#, no-c-format
+msgid ""
+"<ulink url=\"http://l10n.kde.org/docs/screenshots.php\">KDE Documentation "
+"Screenshots Requirements</ulink>."
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:2464
+#, no-c-format
+msgid "Questions and Answers"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2472
+#, no-c-format
+msgid "What do I need to compile &kapp;?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2477
+#, no-c-format
+msgid ""
+"Read in the <link linkend=\"requirements\">chapter</link> mentioned before. "
+"It compiles with gcc-3.x or gcc-4.x as well."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2488
+#, no-c-format
+msgid "Which sound cards does &kapp; support?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2493
+#, no-c-format
+msgid ""
+"&kapp; does not need support for any special sound card. The sound card only "
+"has to be supported by your operating system and &kapp; uses it's interface "
+"to the operating system's sound driver through a OSS or ALSA interface. So "
+"&kapp; can play on any sound card that KDE is able to play on."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2506
+#, no-c-format
+msgid "Why are some menu entries / features always disabled?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2511
+#, no-c-format
+msgid ""
+"This is just because we decided that those actions are not working stable "
+"enough to present them to the normal user and therefore disabled them to "
+"avoid trouble. You will get access to them if they are tested and stable "
+"enough."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2523
+#, no-c-format
+msgid ""
+"Why does &kapp; consume more memory than it can be expected from the size of "
+"the opened file?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2529
+#, no-c-format
+msgid ""
+"The reason for this is that &kapp; internally stores all samples in 32-bit "
+"integers. This was easy to program, made the application faster and a bit "
+"more reliable. So if you load an 8-bit file with about one megabyte it will "
+"consume about four megabytes. Maybe we will change this somewhere in the "
+"future..."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2542
+#, no-c-format
+msgid "Which sound formats does &kapp; support?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2547
+#, no-c-format
+msgid ""
+"&kapp; currently supports .wav files with 8, 16 and 24 bits per sample, with "
+"any number of channels (of course including mono and stereo). Additionally "
+"it can import all file types that libaudiofile supports and some other "
+"formats like Ogg/Vorbis and MP3 (read-only)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2559
+#, no-c-format
+msgid "What if I have files with a format not supported by &kapp;?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2565
+#, no-c-format
+msgid ""
+"If you have to work on an other format, you can convert it into .wav format. "
+"A good set of tools for this is in the <ulink url=\"http://sox.sourceforge."
+"net/\">SoX</ulink> package, they have also some nice documentation!"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2577
+#, no-c-format
+msgid "I get errors when I want to do playback?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2582
+#, no-c-format
+msgid ""
+"Maybe you have choosen a combination of playback rate and sample size that "
+"is not supported by your sound driver and / or sound hardware. Try playback "
+"with 8 bits per sample and mono first, this should always work. Then try to "
+"increase the bits per sample and stereo playback step by step. Note that "
+"some playback rates are not at all supported by some sound hardware."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2596
+#, no-c-format
+msgid "The playback seems to do something but I hear nothing?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2601
+#, no-c-format
+msgid ""
+"Maybe you have forgotten to increase the volume of the playback channel. "
+"&kapp; is not responsible for changing the playback volume."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2611
+#, no-c-format
+msgid "Some files are played with half-speed?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2616
+#, no-c-format
+msgid "Try choosing a different sound playback device."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2624
+#, no-c-format
+msgid "The playback sometimes is disturbed and interrupted?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2629
+#, no-c-format
+msgid ""
+"You should increase the size of the playback buffer to get a \"smoother\" "
+"playback (this also makes the playback control reacting a bit slower)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2639
+#, no-c-format
+msgid "The playback does not stop if I immediately press the stop button?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2645
+#, no-c-format
+msgid ""
+"The reason for this is that the sound driver already has received some "
+"playback data from &kapp; at the moment when you press the stop button. "
+"Decrease the size of the playback buffer and it should react faster (but "
+"makes interruptions more probable)."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2657
+#, no-c-format
+msgid "Is ALSA supported?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2662
+#, no-c-format
+msgid "Yes, since v0.7.4 for playback and recording"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2670
+#, no-c-format
+msgid ""
+"What about playback with 18, 20, 24 or 32 bits per sample or more than two "
+"channels?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2676
+#, no-c-format
+msgid "This is possible through the ALSA interface, since v0.7.4."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2685
+#, no-c-format
+msgid "What about MP3 support?"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2690
+#, no-c-format
+msgid ""
+"Well, as long as there are patent issues, we support only MP3 import through "
+"the mad library. No export, sorry... Additionally you need to have the "
+"permission to use code covered by the MP3 patents when generating a Kwave "
+"package for distributing!"
+msgstr ""
+
+#. Tag: title
+#: help_en-work.docbook:2723
+#, no-c-format
+msgid "Credits and License"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2725
+#, no-c-format
+msgid "&kapp;"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2727
+#, no-c-format
+msgid ""
+"Program copyright from 1998-2000 Martin Wilz <email>mwilz@ernie.mi.uni-koeln."
+"de</email>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2731
+#, no-c-format
+msgid ""
+"Program copyright since 2000 Thomas Eschenbacher <email>thomas."
+"eschenbacher@gmx.de</email>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2735
+#, no-c-format
+msgid ""
+"For a complete list of authors and licenses of all files, please see the "
+"<filename>LICENSES</filename> file, which is included in the sources. It is "
+"also available online at <ulink url=\"http://svn.sourceforge.net/viewvc/"
+"kwave/trunk/LICENSES?view=markup\"> \"http://svn.sourceforge.net/viewvc/"
+"kwave/trunk/LICENSES?view=markup\"</ulink>."
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2743
+#, no-c-format
+msgid "Contributors / Authors:"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2747
+#, no-c-format
+msgid "Thomas Eschenbacher <email>thomas.eschenbacher@gmx.de</email>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2753
+#, no-c-format
+msgid ""
+"Sven-Steffen Arndt <email>ssa29@gmx.de</email> (homepage, german translation)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2760
+#, no-c-format
+msgid "Ralf Waspe <email>rwaspe@web.de</email> (Help/About plugin)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2767
+#, no-c-format
+msgid ""
+"Gilles Caulier <email>caulier.gilles@free.fr</email> (i18n, french "
+"translations, splashscreen, beta tester)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2774
+#, no-c-format
+msgid "Dave Flogeras <email>dflogera@nbnet.nb.ca</email> (Notch Filter plugin)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2781
+#, no-c-format
+msgid ""
+"Rik Hemsley <email>rik@kde.org</email> (<ulink url=\"http://rikkus.info/"
+"esoundlevelmeter.html\">level meter</ulink>)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2808
+#, no-c-format
+msgid "Thanks to (in alphabetical order):"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2815
+#, no-c-format
+msgid ""
+"Jorge Luis Arzola <email>arzolacub@gmx.de</email> (packaging for SuSE Linux)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2822
+#, no-c-format
+msgid ""
+"Matthias Düsterhöft <email>duesti@gmx.de</email> <emphasis> (for information "
+"about RPM optimization) </emphasis>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2830
+#, no-c-format
+msgid ""
+"Michael Favreau <email>michel.favreau@free.fr</email> (packaging for Arch "
+"Linux)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2837
+#, no-c-format
+msgid ""
+"Aurelien Jarno <email>aurel32@debian.org</email> (<ulink url=\"http://www."
+"debian.org\">debian</ulink> packager)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2844
+#, no-c-format
+msgid "Martin Kuball <email>makube@user.sourceforge.net</email> (beta tester)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2850
+#, no-c-format
+msgid "my wife Ximena González<emphasis> (for her patience)</emphasis>"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2854
+#, no-c-format
+msgid ""
+"T.H.F. Klok and Cedric Tefft (maintainers of the <ulink url=\"http://www."
+"id3lib.org/\"> id3lib</ulink> library)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2861
+#, no-c-format
+msgid ""
+"Robert Leslie <email>rob@mars.org</email> (author of the <ulink url=\"http://"
+"www.mars.org/home/rob/proj/mpeg/\">mad</ulink> mp3 decoder library)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2870
+#, no-c-format
+msgid ""
+"Erik de Castro Lopo <email>erikd@zip.com.au</email> (author of the <ulink "
+"url=\"http://www.mega-nerd.com/libsndfile/\">sndfile</ulink> library)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2880
+#, no-c-format
+msgid ""
+"Michael Pruett <email>mpruett@sgi.com</email> (author of the <ulink url="
+"\"http://freeware.sgi.com/Installable/audiofile-0.2.3.html\">audiofile</"
+"ulink> library)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2889
+#, no-c-format
+msgid ""
+"Robert M. Stockmann <email>stock@stokkie.net</email> (packaging for "
+"Mandrake / X86_64)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2896
+#, no-c-format
+msgid ""
+"Diederick de Vries <email>diederick76@gmail.com</email> (packaging for Crux "
+"Linux)"
+msgstr ""
+
+#. Tag: para
+#: help_en-work.docbook:2905
+#, no-c-format
+msgid ""
+"Documentation copyright (C) 2006 Thomas Eschenbacher <email>thomas."
+"eschenbacher@gmx.de</email>"
+msgstr ""
+
+#. Tag: chapter
+#: help_en-work.docbook:2908
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr ""
