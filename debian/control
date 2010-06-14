@@ -17,8 +17,6 @@ Homepage: http://kwave.sourceforge.net
 Package: kwave
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: kwave-doc-en, kwave-doc-de, kwave-doc-fr
-Provides: kwave-doc, kwave-doc-en, kwave-doc-de, kwave-doc-fr
 Description: sound editor for KDE
  "Kwave" is a simple sound editor for KDE. Its features include:
    * simple cut, copy and paste functions
