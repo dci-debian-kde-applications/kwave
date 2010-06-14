@@ -7,4 +7,4 @@ ifneq ($(DEB_HOST_ARCH_OS),linux)
 endif
 
 %:
-	dh $@
+	dh --parallel $@

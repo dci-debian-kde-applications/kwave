@@ -1,9 +1,0 @@
-?package(kwave): \
-	needs="X11" \
-	section="Applications/Sound" \
-        hints="KDE" \
-        kderemove="y" \
-	title="Kwave" \
-	description="A sound editor for KDE" \
-	command="/usr/bin/kwave" \
-	icon="/usr/share/pixmaps/kwave.xpm"

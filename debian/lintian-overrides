@@ -27,5 +27,6 @@ unstripped-binary-or-object ./usr/lib/kde4/plugins/kwave/volume
 unstripped-binary-or-object ./usr/lib/kde4/plugins/kwave/zero
 unstripped-binary-or-object ./usr/lib/kde4/plugins/kwave/reverse
 unstripped-binary-or-object ./usr/lib/kde4/plugins/kwave/samplerate
+unstripped-binary-or-object ./usr/lib/kde4/plugins/kwave/normalize
 # Debian copyright mentions GPL, GPL-2 and a whole lot more
 copyright-refers-to-versionless-license-file usr/share/common-licenses/GPL
