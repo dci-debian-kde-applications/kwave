@@ -1,6 +1,6 @@
 kwave (0.8.5-1-1) UNRELEASED; urgency=low
 
-  * New upstream release
+  * New upstream release (Closes: #581557)
   * NEW Maintainer: Debian KDE Extras Team 
     <pkg-kde-extras@lists.alioth.debian.org> (Closes: #497269)
   * Drop local doc/ changes
