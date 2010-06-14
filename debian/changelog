@@ -6,8 +6,9 @@ kwave (0.8.5-1-1) UNRELEASED; urgency=low
   * Drop local doc/ changes
   * Add debian/watch
   * Drop Obsolete Conflicts: Provides:
+  * source/format -> 3.0 (quilt)
 
- -- Mark Purcell <msp@debian.org>  Mon, 14 Jun 2010 17:10:37 +1000
+ -- Mark Purcell <msp@debian.org>  Mon, 14 Jun 2010 17:16:56 +1000
 
 kwave (0.8.2-5) unstable; urgency=low
 
