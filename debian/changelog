@@ -1,8 +1,8 @@
-kwave (0.8.5-1-2) UNRELEASED; urgency=low
+kwave (0.8.5-1-2) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * Added Build-Depends: libsamplerate0-dev
 
- -- Mark Purcell <msp@debian.org>  Mon, 14 Jun 2010 17:59:23 +1000
+ -- Mark Purcell <msp@debian.org>  Tue, 15 Jun 2010 08:45:58 +1000
 
 kwave (0.8.5-1-1) unstable; urgency=low
 
