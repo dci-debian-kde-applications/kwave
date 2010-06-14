@@ -7,8 +7,10 @@ kwave (0.8.5-1-1) UNRELEASED; urgency=low
   * Add debian/watch
   * Drop Obsolete Conflicts: Provides:
   * source/format -> 3.0 (quilt)
+  * Switch to dh 7 - drop cdbs
+  * Update lintian-overrides
 
- -- Mark Purcell <msp@debian.org>  Mon, 14 Jun 2010 17:16:56 +1000
+ -- Mark Purcell <msp@debian.org>  Mon, 14 Jun 2010 17:35:33 +1000
 
 kwave (0.8.2-5) unstable; urgency=low
 
