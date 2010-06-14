@@ -1,3 +1,12 @@
+kwave (0.8.5-1-1) UNRELEASED; urgency=low
+
+  * New upstream release
+  * NEW Maintainer: Debian KDE Extras Team 
+    <pkg-kde-extras@lists.alioth.debian.org> (Closes: #497269)
+  * Drop local doc/ changes
+
+ -- Mark Purcell <msp@debian.org>  Mon, 14 Jun 2010 16:58:47 +1000
+
 kwave (0.8.2-5) unstable; urgency=low
 
   * QA upload.
