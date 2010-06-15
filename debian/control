@@ -3,7 +3,7 @@ Section: kde
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Mark Purcell <msp@debian.org>
-Build-Depends: debhelper (>= 7), pkg-kde-tools (>= 0.4),
+Build-Depends: debhelper (>= 7.0.50~), pkg-kde-tools (>= 0.4),
  kdelibs5-dev (>= 4:4.2.0), gettext, pkg-config,
  libsamplerate0-dev, libpulse-dev,
  imagemagick, recode, libid3-3.8.3-dev (>= 3.8.3-4.2),
