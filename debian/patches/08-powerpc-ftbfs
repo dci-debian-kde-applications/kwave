@@ -1,0 +1,204 @@
+Origin: upstream, http://sourceforge.net/tracker/download.php?group_id=6478&atid=306478&file_id=387661&aid=3074226
+Bug: http://sourceforge.net/tracker/?func=detail&aid=3074226&group_id=6478&atid=306478
+Bug-Debian: http://bugs.debian.org/593113
+Forwarded: not-needed
+Reviewed-By: Scott Kitterman <scott@kitterman.com>
+Last-Update: <2010-09-26>
+
+--- kwave-0.8.5-1.orig/config.h.cmake
++++ kwave-0.8.5-1/config.h.cmake
+@@ -24,6 +24,9 @@
+ /* use X86_64 target optimizations (from xine) */
+ #cmakedefine ARCH_X86_64
+ 
++/* use target optimized memcpy */
++#cmakedefine HAVE_OPTIMIZED_MEMCPY
++
+ /* FLAC API of v1.1.1 and before */
+ #cmakedefine FLAC_API_VERSION_1_1_1_OR_OLDER
+ 
+--- kwave-0.8.5-1.orig/CMakeLists.txt
++++ kwave-0.8.5-1/CMakeLists.txt
+@@ -38,6 +38,7 @@ SET(KWAVE_LINGUAS
+ # OPTION(WITH_MP3        "enable support for mp3 files [default=off]" OFF)
+ # OPTION(WITH_OGG        "enable support for ogg files [default=on]" ON)
+ # OPTION(WITH_OSS        "enable playback/recording via OSS [default=on]" ON)
++# OPTION(WITH_OPTIMIZED_MEMCPY "enable optimized memcpy [default=on]" ON)
+ # OPTION(WITH_PHONON     "enable playback via Phonon [default=off]" OFF)
+ # OPTION(WITH_PULSEAUDIO "enable playback/recording via PulseAudio [default=on]" ON)
+ # OPTION(WITH_SAMPLERATE "enable support for libsamplerate [default=on]" ON)
+@@ -82,23 +83,36 @@ EXECUTE_PROCESS(
+ )
+ MESSAGE(STATUS "Building for target ${MACHINE}")
+ 
+-STRING(REGEX MATCH "(i.86-*)|(athlon-*)|(pentium-*)" _mach_x86 ${MACHINE})
+-IF (_mach_x86)
+-    MESSAGE(STATUS "Found target optimized memcpy() for X86 (from xine)")
+-    SET(ARCH_X86 1)
+-ENDIF (_mach_x86)
+-
+-STRING(REGEX MATCH "(x86_64-*)|(X86_64-*)|(AMD64-*)|(amd64-*)" _mach_x86_64 ${MACHINE})
+-IF (_mach_x86_64)
+-    MESSAGE(STATUS "Found target optimized memcpy() for X86_64 (from xine)")
+-    SET(ARCH_X86_64 1)
+-ENDIF (_mach_x86_64)
+-
+-STRING(REGEX MATCH "(ppc-*)|(powerpc-*)" _mach_ppc ${MACHINE})
+-IF (_mach_ppc)
+-    MESSAGE(STATUS "Found target optimized memcpy() for PPC (from xine)")
+-    SET(ARCH_PPC 1)
+-ENDIF (_mach_ppc)
++OPTION(WITH_OPTIMIZED_MEMCPY "enable optimized memcpy [default=on]" ON)
++IF (WITH_OPTIMIZED_MEMCPY)
++
++    STRING(REGEX MATCH "(i.86-*)|(athlon-*)|(pentium-*)" _mach_x86 ${MACHINE})
++    IF (_mach_x86)
++        MESSAGE(STATUS "Found target optimized memcpy() for X86 (from xine)")
++        SET(ARCH_X86 1)
++    ENDIF (_mach_x86)
++
++    STRING(REGEX MATCH "(x86_64-*)|(X86_64-*)|(AMD64-*)|(amd64-*)" _mach_x86_64 ${MACHINE})
++    IF (_mach_x86_64)
++        MESSAGE(STATUS "Found target optimized memcpy() for X86_64 (from xine)")
++        SET(ARCH_X86_64 1)
++    ENDIF (_mach_x86_64)
++
++    STRING(REGEX MATCH "(ppc-*)|(powerpc-*)" _mach_ppc ${MACHINE})
++    IF (_mach_ppc)
++        MESSAGE(STATUS "Found target optimized memcpy() for PPC (from xine)")
++        SET(ARCH_PPC 1)
++    ENDIF (_mach_ppc)
++
++    IF (NOT ARCH_X86 AND NOT ARCH_X86_64 AND NOT ARCH_PPC)
++        MESSAGE(STATUS "No platform specific memcpy available")
++    ELSE (NOT ARCH_X86 AND NOT ARCH_X86_64 AND NOT ARCH_PPC)
++	SET(HAVE_OPTIMIZED_MEMCPY 1)
++    ENDIF (NOT ARCH_X86 AND NOT ARCH_X86_64 AND NOT ARCH_PPC)
++
++ELSE (WITH_OPTIMIZED_MEMCPY)
++    MESSAGE(STATUS "Platform specific memcpy is disabled")
++ENDIF (WITH_OPTIMIZED_MEMCPY)
+ 
+ ADD_DEFINITIONS(-DHAVE_CONFIG_H)
+ 
+--- kwave-0.8.5-1.orig/kwave/main.cpp
++++ kwave-0.8.5-1/kwave/main.cpp
+@@ -119,8 +119,11 @@ void addDataStrings(KAboutData &aboutdat
+ 
+ }
+ 
++#ifdef HAVE_OPTIMIZED_MEMCPY
+ /* forward declaration to libkwave/memcpy.c */
+ extern "C" void probe_fast_memcpy(void);
++#endif /* HAVE_OPTIMIZED_MEMCPY */
++
+ 
+ //***************************************************************************
+ int main( int argc, char **argv )
+@@ -154,8 +157,10 @@ int main( int argc, char **argv )
+     KwaveApp::addCmdLineOptions();
+ 
+      /* check for an optimized version of memcpy() */
++#ifdef HAVE_OPTIMIZED_MEMCPY
+     probe_fast_memcpy();
+     printf("\n");
++#endif /* HAVE_OPTIMIZED_MEMCPY */
+ 
+ #ifdef UNIQUE_APP
+     if (!KUniqueApplication::start()) {
+--- kwave-0.8.5-1.orig/libkwave/memcpy.h
++++ kwave-0.8.5-1/libkwave/memcpy.h
+@@ -17,6 +17,10 @@
+ #ifndef _MEMCPY_H_
+ #define _MEMCPY_H_
+ 
++#include "config.h"
++
++#ifdef HAVE_OPTIMIZED_MEMCPY
++
+ #include <stdlib.h> /* for size_t */
+ 
+ /** use optimized memcpy() from xine */
+@@ -25,4 +29,13 @@
+ /* forward declaration to libkwave/memcpy.c */
+ extern "C" void *(* xine_fast_memcpy)(void *to, const void *from, size_t len);
+ 
++#else /* HAVE_OPTIMIZED_MEMCPY */
++
++#include <string.h> /* for memcpy from libc */
++
++/** use standard memcpy() from libc */
++#define MEMCPY memcpy
++
++#endif /* HAVE_OPTIMIZED_MEMCPY */
++
+ #endif /* _MEMCPY_H_ */
+--- kwave-0.8.5-1.orig/libkwave/CMakeLists.txt
++++ kwave-0.8.5-1/libkwave/CMakeLists.txt
+@@ -17,27 +17,21 @@
+ 
+ #############################################################################
+ 
+-ADD_CUSTOM_COMMAND(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/ppcasm_string.o
+-    COMMAND ${CMAKE_C_COMPILER} -I${CMAKE_BINARY_DIR} -Wall -O2
+-        -DHAVE_CONFIG_H
+-        -o ${CMAKE_CURRENT_BINARY_DIR}/ppcasm_string.o
+-        -c ${CMAKE_CURRENT_SOURCE_DIR}/ppcasm_string.S
+-    DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/ppcasm_string.S
+-)
+-
+-#############################################################################
+-
+ IF (WITH_SAMPLERATE)
+     SET(libkwave_LIB_SRCS_samplerate modules/RateConverter.cpp)
+ ENDIF (WITH_SAMPLERATE)
+ 
++IF (WITH_OPTIMIZED_MEMCPY)
++    SET(libkwave_LIB_SRCS_memcpy cputest.c memcpy.c ppcasm_string.S)
++    SET_SOURCE_FILES_PROPERTIES(ppcasm_string.S PROPERTIES LANGUAGE C)
++ENDIF (WITH_OPTIMIZED_MEMCPY)
++
+ SET(libkwave_LIB_SRCS
+     ClipBoard.cpp
+     CodecBase.cpp
+     CodecManager.cpp
+     CompressionType.cpp
+     ConfirmCancelProxy.cpp
+-    cputest.c
+     Curve.cpp
+     Decoder.cpp
+     Encoder.cpp
+@@ -59,7 +53,6 @@ SET(libkwave_LIB_SRCS
+     KwaveSampleSource.cpp
+     Label.cpp
+     LabelList.cpp
+-    memcpy.c
+     MemoryManager.cpp
+     MessageBox.cpp
+     MultiWriter.cpp
+@@ -70,7 +63,6 @@ SET(libkwave_LIB_SRCS
+     PlaybackController.cpp
+     PluginManager.cpp
+     PluginWorkerThread.cpp
+-    ppcasm_string.S
+     Selection.cpp
+     Signal.cpp
+     SignalManager.cpp
+@@ -107,6 +99,7 @@ SET(libkwave_LIB_SRCS
+     undo/UndoTransactionGuard.cpp
+ 
+     ${libkwave_LIB_SRCS_samplerate}
++    ${libkwave_LIB_SRCS_memcpy}
+ )
+ 
+ #############################################################################
+--- kwave-0.8.5-1.orig/libkwave/ppcasm_string.h
++++ kwave-0.8.5-1/libkwave/ppcasm_string.h
+@@ -15,3 +15,7 @@
+ #include <stdlib.h>
+ void *ppcasm_cacheable_memcpy(void *, const void *, size_t);
+ void *ppcasm_memcpy(void *, const void *, size_t);
++
++#ifndef MM_ACCEL_PPC_CACHE32
++#define MM_ACCEL_PPC_CACHE32    0x02000000
++#endif
