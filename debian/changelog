@@ -1,9 +1,9 @@
-kwave (0.8.6-1-1) UNRELEASED; urgency=low
+kwave (0.8.6-1-1) unstable; urgency=low
 
-  * New upstream release
+  * New upstream release 
   * Drop patches/08-powerpc-ftbfs - fixed upstream
 
- -- Mark Purcell <msp@debian.org>  Fri, 10 Jun 2011 17:46:29 +1000
+ -- Mark Purcell <msp@debian.org>  Fri, 10 Jun 2011 17:59:43 +1000
 
 kwave (0.8.5-1-4) unstable; urgency=low
 
