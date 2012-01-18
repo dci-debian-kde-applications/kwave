@@ -12,3 +12,8 @@ endif
 override_dh_auto_configure:
 	dh_auto_configure -- $(DEB_CMAKE_CUSTOM_FLAGS)
 
+override_dh_strip:
+	dh_strip --dbg-package=kwave-dbg
+
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/kwave

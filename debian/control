@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 7.0.50~), pkg-kde-tools (>= 0.4),
  kdelibs5-dev (>= 4:4.2.0), gettext, pkg-config,
  libsamplerate0-dev, libpulse-dev,
  imagemagick, recode, libid3-3.8.3-dev (>= 3.8.3-4.2),
- libaudiofile-dev (> 0.3.0), libogg-dev, libvorbis-dev (>= 1.0.0-2), 
+ libaudiofile-dev (>> 0.3.0), libogg-dev, libvorbis-dev (>= 1.0.0-2), 
  libflac++-dev (>= 1.1.4), libmad0-dev, libgsl0-dev,
  libasound2-dev [linux-any],
  libfftw3-dev,
@@ -37,3 +37,13 @@ Description: sound editor for KDE
    * extensible through an easy-to-use plugin interface
  .
   Author:   Thomas Eschenbacher <Thomas.Eschenbacher@gmx.de>
+
+Package: kwave-dbg
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, kwave (= ${binary:Version}) 
+Priority: extra
+Section: debug
+Description: sound editor for KDE - debug symbols
+ "Kwave" is a simple sound editor for KDE.
+ .
+ This package includes the debug symbols.
