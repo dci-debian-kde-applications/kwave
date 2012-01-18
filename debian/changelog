@@ -1,10 +1,12 @@
 kwave (0.8.7-1-1) UNRELEASED; urgency=low
 
   * New upstream release
+    - Fixes "FTBFS: VirtualAudioFile.cpp:209:24: error:" (Closes: #655657)
+      - Build-Depends: libaudiofile-dev (> 0.3.0)
   * Fix "debian/control uses hardcoded list of non-Linux architectures"
     Build-Depends: libfoo-dev [linux-any] (Closes: #634787)
 
- -- Mark Purcell <msp@debian.org>  Wed, 18 Jan 2012 14:32:09 +1100
+ -- Mark Purcell <msp@debian.org>  Wed, 18 Jan 2012 14:39:40 +1100
 
 kwave (0.8.6-1-1) unstable; urgency=low
 
