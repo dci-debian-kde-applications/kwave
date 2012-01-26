@@ -1,3 +1,10 @@
+kwave (0.8.7-1-2) unstable; urgency=low
+
+  * Upload to unstable 
+    - part of audiofile transition
+
+ -- Mark Purcell <msp@debian.org>  Thu, 26 Jan 2012 12:28:09 +1100
+
 kwave (0.8.7-1-1) experimental; urgency=low
 
   * lca2012 release
