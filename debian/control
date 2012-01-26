@@ -9,7 +9,7 @@ Build-Depends: debhelper (>= 7.0.50~), pkg-kde-tools (>= 0.4),
  imagemagick, recode, libid3-3.8.3-dev (>= 3.8.3-4.2),
  libaudiofile-dev (>> 0.3.0), libogg-dev, libvorbis-dev (>= 1.0.0-2), 
  libflac++-dev (>= 1.1.4), libmad0-dev, libgsl0-dev,
- libasound2-dev [linux-any],
+ libasound2-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
  libfftw3-dev,
  poxml, gawk, cmake
 Homepage: http://kwave.sourceforge.net

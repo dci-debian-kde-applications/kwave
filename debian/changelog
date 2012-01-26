@@ -1,4 +1,4 @@
-kwave (0.8.7-1-2) UNRELEASED; urgency=low
+kwave (0.8.7-1-2) unstable; urgency=low
 
   * Upload to unstable 
     - part of audiofile transition
@@ -10,8 +10,9 @@ kwave (0.8.7-1-2) UNRELEASED; urgency=low
   * dh_overide_strip manually remove unneeded and .comment 
     -  fixes unstripped-binary-or-object
   * Drop unused-override
+  * Reopen #634787 - pbuilder doesn't like solution
 
- -- Mark Purcell <msp@debian.org>  Thu, 26 Jan 2012 13:24:08 +1100
+ -- Mark Purcell <msp@debian.org>  Thu, 26 Jan 2012 13:28:30 +1100
 
 kwave (0.8.7-1-1) experimental; urgency=low
 
