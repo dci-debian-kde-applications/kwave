@@ -14,6 +14,7 @@ override_dh_auto_configure:
 
 override_dh_strip:
 	dh_strip --dbg-package=kwave-dbg
+	strip --strip-unneeded --remove-section=.comment debian/kwave/usr/lib/kde3/plugins/kwave/*
 
 override_dh_auto_install:
 	dh_auto_install --destdir=debian/kwave

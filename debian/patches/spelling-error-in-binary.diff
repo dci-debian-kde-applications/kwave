@@ -1,7 +1,7 @@
 Index: kwave-0.8.7-1/plugins/fileinfo/KeywordWidgetBase.ui
 ===================================================================
 --- kwave-0.8.7-1.orig/plugins/fileinfo/KeywordWidgetBase.ui	2011-11-17 00:10:41.000000000 +1100
-+++ kwave-0.8.7-1/plugins/fileinfo/KeywordWidgetBase.ui	2012-01-26 12:45:24.000000000 +1100
++++ kwave-0.8.7-1/plugins/fileinfo/KeywordWidgetBase.ui	2012-01-26 13:18:35.000000000 +1100
 @@ -63,7 +63,7 @@
       </property>
       <property name="whatsThis">
@@ -14,7 +14,7 @@ Index: kwave-0.8.7-1/plugins/fileinfo/KeywordWidgetBase.ui
 Index: kwave-0.8.7-1/plugins/playback/PlayBack-ALSA.cpp
 ===================================================================
 --- kwave-0.8.7-1.orig/plugins/playback/PlayBack-ALSA.cpp	2011-11-17 00:10:36.000000000 +1100
-+++ kwave-0.8.7-1/plugins/playback/PlayBack-ALSA.cpp	2012-01-26 12:46:03.000000000 +1100
++++ kwave-0.8.7-1/plugins/playback/PlayBack-ALSA.cpp	2012-01-26 13:18:35.000000000 +1100
 @@ -567,7 +567,7 @@
  		break;
  	    case EBUSY:
@@ -27,7 +27,7 @@ Index: kwave-0.8.7-1/plugins/playback/PlayBack-ALSA.cpp
 Index: kwave-0.8.7-1/plugins/playback/PlayBack-OSS.cpp
 ===================================================================
 --- kwave-0.8.7-1.orig/plugins/playback/PlayBack-OSS.cpp	2011-11-17 00:10:36.000000000 +1100
-+++ kwave-0.8.7-1/plugins/playback/PlayBack-OSS.cpp	2012-01-26 12:46:14.000000000 +1100
++++ kwave-0.8.7-1/plugins/playback/PlayBack-OSS.cpp	2012-01-26 13:18:35.000000000 +1100
 @@ -138,7 +138,7 @@
  		break;
  	    case EBUSY:
@@ -40,7 +40,7 @@ Index: kwave-0.8.7-1/plugins/playback/PlayBack-OSS.cpp
 Index: kwave-0.8.7-1/plugins/record/RecordDlg.ui
 ===================================================================
 --- kwave-0.8.7-1.orig/plugins/record/RecordDlg.ui	2011-11-17 00:10:47.000000000 +1100
-+++ kwave-0.8.7-1/plugins/record/RecordDlg.ui	2012-01-26 12:46:48.000000000 +1100
++++ kwave-0.8.7-1/plugins/record/RecordDlg.ui	2012-01-26 13:18:35.000000000 +1100
 @@ -1053,7 +1053,7 @@
                    <string>Recording device</string>
                   </property>
@@ -53,7 +53,7 @@ Index: kwave-0.8.7-1/plugins/record/RecordDlg.ui
 Index: kwave-0.8.7-1/po/cs.po
 ===================================================================
 --- kwave-0.8.7-1.orig/po/cs.po	2011-11-27 01:58:14.000000000 +1100
-+++ kwave-0.8.7-1/po/cs.po	2012-01-26 12:49:35.000000000 +1100
++++ kwave-0.8.7-1/po/cs.po	2012-01-26 13:18:35.000000000 +1100
 @@ -4011,7 +4011,7 @@
  "nového řádku!"
  
@@ -66,7 +66,7 @@ Index: kwave-0.8.7-1/po/cs.po
 Index: kwave-0.8.7-1/po/de.po
 ===================================================================
 --- kwave-0.8.7-1.orig/po/de.po	2011-11-27 01:58:14.000000000 +1100
-+++ kwave-0.8.7-1/po/de.po	2012-01-26 12:49:17.000000000 +1100
++++ kwave-0.8.7-1/po/de.po	2012-01-26 13:18:35.000000000 +1100
 @@ -4013,8 +4013,8 @@
  "einem Punkt enden. Keine Zeilenumbrücke einfügen!"
  
@@ -81,7 +81,7 @@ Index: kwave-0.8.7-1/po/de.po
 Index: kwave-0.8.7-1/po/fr.po
 ===================================================================
 --- kwave-0.8.7-1.orig/po/fr.po	2011-11-27 01:58:14.000000000 +1100
-+++ kwave-0.8.7-1/po/fr.po	2012-01-26 12:49:00.000000000 +1100
++++ kwave-0.8.7-1/po/fr.po	2012-01-26 13:18:35.000000000 +1100
 @@ -4167,7 +4167,7 @@
  "N'utilisez pas de retour chariot !"
  
@@ -94,7 +94,7 @@ Index: kwave-0.8.7-1/po/fr.po
 Index: kwave-0.8.7-1/po/kwave.pot
 ===================================================================
 --- kwave-0.8.7-1.orig/po/kwave.pot	2011-11-27 01:58:14.000000000 +1100
-+++ kwave-0.8.7-1/po/kwave.pot	2012-01-26 12:49:45.000000000 +1100
++++ kwave-0.8.7-1/po/kwave.pot	2012-01-26 13:18:35.000000000 +1100
 @@ -1000,7 +1000,7 @@
  msgstr ""
  
@@ -104,3 +104,16 @@ Index: kwave-0.8.7-1/po/kwave.pot
  msgstr ""
  
  #: libkwave/GenreType.cpp:145
+Index: kwave-0.8.7-1/libkwave/GenreType.cpp
+===================================================================
+--- kwave-0.8.7-1.orig/libkwave/GenreType.cpp	2011-11-17 00:14:30.000000000 +1100
++++ kwave-0.8.7-1/libkwave/GenreType.cpp	2012-01-26 13:22:55.000000000 +1100
+@@ -141,7 +141,7 @@
+ 	    i18n("Native American"),
+ 	    i18n("Cabaret"),
+ 	    i18n("New Wave"),
+-	    i18n("Psychadelic"),
++	    i18n("Psychedelic"),
+ 	    i18n("Rave"),
+ 	    i18n("Showtunes"),
+ 	    i18n("Trailer"),

@@ -726,9 +726,5 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 On Debian systems, you can find the complete texts of these licenses at:
-  - BSD:      /usr/share/common-licenses/BSD
   - GPLv2:    /usr/share/common-licenses/GPL-2
   - LGPLv2:   /usr/share/common-licenses/LGPL-2
-  - GFDL:     /usr/share/common-licenses/GFDL
-
-
