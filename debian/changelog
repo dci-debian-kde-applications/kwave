@@ -1,6 +1,9 @@
-kwave (0.8.8-1-1) UNRELEASED; urgency=low
+kwave (0.8.8-1-1) unstable; urgency=low
 
   * New upstream release
+    - Fixes "ftbfs with GCC-4.7" (Closes: #667234)
+    - Fixes "FTBFS in sid: Configuring incomplete" (Closes: #673394)
+    - Fixes "kwave fails (error in the configure step)" (Closes: #674901)
 
  -- Mark Purcell <msp@debian.org>  Sat, 09 Jun 2012 18:05:10 +1000
 
