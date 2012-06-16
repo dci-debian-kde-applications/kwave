@@ -7,14 +7,14 @@ ifneq ($(DEB_HOST_ARCH_OS),linux)
 endif
 
 %:
-	dh --parallel --with kde $@
+	dh --with kde $@
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(DEB_CMAKE_CUSTOM_FLAGS)
 
 override_dh_strip:
 	dh_strip --dbg-package=kwave-dbg
-	strip --strip-unneeded --remove-section=.comment debian/kwave/usr/lib/kde3/plugins/kwave/*
+	strip --strip-unneeded --remove-section=.comment debian/kwave/usr/lib/kde4/plugins/kwave/*
 
 override_dh_auto_install:
 	dh_auto_install --destdir=debian/kwave

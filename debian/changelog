@@ -1,25 +1,24 @@
 kwave (0.8.8-1-1) unstable; urgency=low
 
-  * New upstream release
+  * New upstream release 
     - Fixes "ftbfs with GCC-4.7" (Closes: #667234)
     - Fixes "FTBFS in sid: Configuring incomplete" (Closes: #673394)
     - Fixes "kwave fails (error in the configure step)" (Closes: #674901)
+  * Add Build-Depends: libicu-dev
 
- -- Mark Purcell <msp@debian.org>  Sat, 09 Jun 2012 18:05:10 +1000
+ -- Mark Purcell <msp@debian.org>  Sun, 10 Jun 2012 16:02:48 +1000
 
 kwave (0.8.7-1-2) unstable; urgency=low
 
   * Upload to unstable 
     - part of audiofile transition
   * cleanup debian/watch - debian-watch-contains-dh_make-template
-  * Update debian/copyright - copyright-refers-to-deprecated-bsd-
-    license-file
   * Drop unused references to common-licences/
   * Added +spelling-error-in-binary.diff
   * dh_overide_strip manually remove unneeded and .comment 
     -  fixes unstripped-binary-or-object
   * Drop unused-override
-  * Reopen #634787 - pbuilder doesn't like solution
+  * Revert #634787 - pbuilder doesn't like solution
 
  -- Mark Purcell <msp@debian.org>  Thu, 26 Jan 2012 13:28:30 +1100
 
