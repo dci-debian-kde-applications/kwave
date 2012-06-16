@@ -6,7 +6,7 @@ Uploaders: Mark Purcell <msp@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), pkg-kde-tools (>= 0.4),
  kdelibs5-dev (>= 4:4.2.0), gettext, pkg-config,
  libsamplerate0-dev, libpulse-dev,
- imagemagick, recode, libid3-3.8.3-dev (>= 3.8.3-4.2),
+ imagemagick, librsvg2-bin, recode, libid3-3.8.3-dev (>= 3.8.3-4.2),
  libaudiofile-dev (>> 0.3.0), libogg-dev, libvorbis-dev (>= 1.0.0-2), 
  libflac++-dev (>= 1.1.4), libmad0-dev, libgsl0-dev,
  libasound2-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
