@@ -1,3 +1,13 @@
+kwave (0.8.8-1-3) unstable; urgency=low
+
+  * wheezy polish
+  * Fix "debian/control uses hardcoded list of non-Linux architectures"
+   (Closes: #634787)
+  * Update Standards-Version 3.9.3
+  * debian/compat -> 9 
+
+ -- Mark Purcell <msp@debian.org>  Mon, 25 Jun 2012 20:04:35 +1000
+
 kwave (0.8.8-1-2) unstable; urgency=low
 
   * Add Build-Depends: librsvg2-bin  

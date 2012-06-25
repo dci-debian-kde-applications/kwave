@@ -7,7 +7,7 @@ ifneq ($(DEB_HOST_ARCH_OS),linux)
 endif
 
 %:
-	dh --parallel --with kde $@
+	dh $@ --parallel
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(DEB_CMAKE_CUSTOM_FLAGS)
