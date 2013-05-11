@@ -1,3 +1,10 @@
+kwave (0.8.10-1-2) unstable; urgency=low
+
+  * Upload to unstable
+  * Update debian/control - fix vcs-field-not-canonical
+
+ -- Mark Purcell <msp@debian.org>  Sun, 12 May 2013 09:56:58 +1000
+
 kwave (0.8.10-1-1) experimental; urgency=low
 
   * New upstream release 

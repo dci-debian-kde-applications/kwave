@@ -14,9 +14,9 @@ Build-Depends: debhelper (>= 9), pkg-kde-tools (>= 0.4),
  libfftw3-dev,
  poxml, gawk, cmake
 Homepage: http://kwave.sourceforge.net
-Standards-Version: 3.9.3
-Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/kwave/trunk
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/kwave/trunk?op=log
+Standards-Version: 3.9.4
+Vcs-Svn: svn://anonscm.debian.org/pkg-kde/kde-extras/kwave/trunk
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-kde/kde-extras/kwave/trunk?op=log
 
 Package: kwave
 Architecture: any
