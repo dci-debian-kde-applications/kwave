@@ -1,3 +1,11 @@
+kwave (0.8.11-1-1) unstable; urgency=low
+
+  * New upstream release
+  * Fix vcs-field-bitrotted
+  * Add spelling-error-in-binary.patch
+
+ -- Mark Purcell <msp@debian.org>  Sun, 08 Dec 2013 09:21:00 +1100
+
 kwave (0.8.10-1-2) unstable; urgency=low
 
   * Upload to unstable
