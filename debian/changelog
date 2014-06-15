@@ -1,3 +1,10 @@
+kwave (0.8.12-1-1) unstable; urgency=low
+
+  * New upstream release
+    - recording via PulseAudio, major bugfixes
+
+ -- Mark Purcell <msp@debian.org>  Sun, 15 Jun 2014 16:09:54 +1000
+
 kwave (0.8.11-1-1) unstable; urgency=low
 
   * New upstream release

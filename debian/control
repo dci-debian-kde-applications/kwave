@@ -37,8 +37,8 @@ Description: sound editor for KDE
   * Simple Drag & Drop
   * Realtime Pre-Listen for some effects
   * Support for multi-track files
-  * Playback and recording via native ALSA (or OSS, deprecated)
-  * Playback via PulseAudio and Phonon
+  * Playback and recording via native ALSA, PulseAudio (or OSS deprecated)
+  * Playback via Phonon
   * Load and edit-capability for large files (can use virtual memory)
   * Reading and auto-repair of damaged wav-files
   * Supports multiple windows
