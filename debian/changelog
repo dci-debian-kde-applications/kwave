@@ -1,3 +1,10 @@
+kwave (0.8.12-1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Fix unknown entities in doc/help_fr.po (Closes: #759949).
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Sun, 09 Nov 2014 14:52:50 +0500
+
 kwave (0.8.12-1-1) unstable; urgency=low
 
   * New upstream release
