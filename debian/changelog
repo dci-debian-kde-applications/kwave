@@ -2,6 +2,10 @@ kwave (0.9.0-1-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
+  * Update the patches:
+    - spelling-error-in-binary.patch: drop, fixed upstream
+    - 07-no-rpath: refresh
+    - fix-help_fr.po.patch: drop, fixed upstream
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 12 Dec 2015 19:17:52 +0100
 
