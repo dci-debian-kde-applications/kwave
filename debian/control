@@ -48,7 +48,7 @@ Description: sound editor for KDE
 
 Package: kwave-dbg
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, kwave (= ${binary:Version}) 
+Depends: ${misc:Depends}, kwave (= ${binary:Version}) 
 Priority: extra
 Section: debug
 Description: sound editor for KDE - debug symbols

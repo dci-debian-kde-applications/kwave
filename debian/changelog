@@ -7,6 +7,7 @@ kwave (0.9.0-1-0r1) UNRELEASED; urgency=medium
     - 07-no-rpath: refresh
     - fix-help_fr.po.patch: drop, fixed upstream
   * rules: use the kde dh addon, since kwave is a kdelibs-based application.
+  * control: remove ${shlibs:Depends} from the kwave-dbg Depends.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 12 Dec 2015 19:17:52 +0100
 
