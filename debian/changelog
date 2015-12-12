@@ -1,3 +1,10 @@
+kwave (0.9.0-1-0r1) UNRELEASED; urgency=medium
+
+  [ Pino Toscano ]
+  * New upstream release.
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 12 Dec 2015 19:17:52 +0100
+
 kwave (0.8.12-1-2) unstable; urgency=medium
 
   * Team upload.
