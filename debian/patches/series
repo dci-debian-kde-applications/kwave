@@ -1,2 +1,3 @@
 07-no-rpath
 upstream_fix-for-cmake-issues-with-l10n-fix-for-policy-CMP005.patch
+cmake-verbose.diff

@@ -1,0 +1,18 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Do not force a silent build
+ Do not force CMAKE_VERBOSE_MAKEFILE to OFF, so it can be set if needed
+ (e.g. as cmake parameter).
+Last-Update: 2015-12-12
+Forwarded: not-needed
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -132,7 +132,7 @@ INCLUDE(CheckFunctionExists)
+ 
+ #############################################################################
+ 
+-SET(CMAKE_VERBOSE_MAKEFILE OFF)
++#SET(CMAKE_VERBOSE_MAKEFILE OFF)
+ 
+ #############################################################################
+ ### toplevel compiler flags                                               ###
