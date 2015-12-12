@@ -12,6 +12,8 @@ kwave (0.9.0-1-0r1) UNRELEASED; urgency=medium
     to make the documentation targets unique, fixing the build with
     cmake >= 3.3;
     patch upstream_fix-for-cmake-issues-with-l10n-fix-for-policy-CMP005.patch.
+  * Remove unused build dependencies: imagemagick, recode, libgsl0-dev, and
+    libicu-dev.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 12 Dec 2015 19:17:52 +0100
 
