@@ -8,7 +8,7 @@ kwave (0.9.0-1-2) unstable; urgency=medium
     dh_shlibdeps: this way we have proper dependencies for all the libraries
     used by plugins.
 
- -- Pino Toscano <pino@debian.org>  Sun, 13 Dec 2015 09:21:50 +0100
+ -- Pino Toscano <pino@debian.org>  Sun, 13 Dec 2015 10:24:12 +0100
 
 kwave (0.9.0-1-1) unstable; urgency=medium
 
