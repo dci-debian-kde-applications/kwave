@@ -2,8 +2,6 @@
 
 DEB_HOST_ARCH_OS ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 
-export DEB_LDFLAGS_MAINT_APPEND := -Wl,--as-needed
-
 ifneq ($(DEB_HOST_ARCH_OS),linux)
   DEB_CMAKE_CUSTOM_FLAGS += -DWITH_ALSA=OFF
 endif
