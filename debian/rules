@@ -6,23 +6,28 @@ ifneq ($(DEB_HOST_ARCH_OS),linux)
   DEB_CMAKE_CUSTOM_FLAGS += -DWITH_ALSA=OFF
 endif
 
+# since the kwave plugins have no .so extension, debhelper tools do not
+# find them; since we want to act on them, do a small hack:
+# 1) link each plugin to a new a .so name
+# 2) invoke the command normally (which will do the job)
+# 3) remove the .so links
+define override-so-plugins
+
+override_$(1):
+	find debian/kwave/usr/lib/kde4/plugins/kwave/ -type f -execdir ln '{}' '{}.so' \;
+	$(1) $(2)
+	find debian/kwave/usr/lib/kde4/plugins/kwave/ -type f -name '*.so' -delete
+
+endef
+
 %:
 	dh $@ --parallel --with kde
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(DEB_CMAKE_CUSTOM_FLAGS)
 
-override_dh_strip:
-	# since the kwave plugins have no .so extension, dh_strip does not
-	# find them (leaving them unstripped); since we want to both strip
-	# them and place their debug symbols in the -dbg package, do a small
-	# hack:
-	# 1) link each plugin to a new a .so name
-	find debian/kwave/usr/lib/kde4/plugins/kwave/ -type f -execdir ln '{}' '{}.so' \;
-	# 2) invoke dh_strip normally (which will do the job)
-	dh_strip --dbg-package=kwave-dbg
-	# 3) remove the .so links
-	find debian/kwave/usr/lib/kde4/plugins/kwave/ -type f -name '*.so' -delete
+$(eval $(call override-so-plugins,dh_strip,--dbg-package=kwave-dbg))
+$(eval $(call override-so-plugins,dh_shlibdeps,))
 
 override_dh_auto_install:
 	dh_auto_install --destdir=debian/kwave

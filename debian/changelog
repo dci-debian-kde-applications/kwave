@@ -4,6 +4,9 @@ kwave (0.9.0-1-2) unstable; urgency=medium
   * Backport part of upstream commit 90f6e432e06e9ec1480a24b37f5ffe5dec4f75fc
     to fix a double vs float mismatch in sonagram plugin (fixing build on arm*
     architectures); patch upstream_compile-fix-for-armv7l.patch.
+  * Extend the dh_strip hack into an helper function, and apply it also to
+    dh_shlibdeps: this way we have proper dependencies for all the libraries
+    used by plugins.
 
  -- Pino Toscano <pino@debian.org>  Sun, 13 Dec 2015 09:21:50 +0100
 
