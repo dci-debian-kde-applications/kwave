@@ -23,6 +23,7 @@ kwave (0.9.1-1-0r1) UNRELEASED; urgency=medium
     so debhelper tools can handle them correctly.
   * Use https for the Vcs-Browser field.
   * Bump Standards-Version to 3.9.7, no changes required.
+  * Link in as-needed mode.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 25 Mar 2016 10:25:08 +0100
 
