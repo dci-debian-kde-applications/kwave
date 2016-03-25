@@ -1,6 +1,6 @@
-kwave (0.9.1-1-0r1) UNRELEASED; urgency=medium
+kwave (0.9.1-1-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Update the patches:
     - 07-no-rpath: refresh
@@ -27,7 +27,7 @@ kwave (0.9.1-1-0r1) UNRELEASED; urgency=medium
   * Fix loading of plugins, by not requiring executable permissions on them;
     patch plugins-not-executable.diff.
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 25 Mar 2016 10:25:08 +0100
+ -- Pino Toscano <pino@debian.org>  Fri, 25 Mar 2016 12:25:42 +0100
 
 kwave (0.9.0-1-2) unstable; urgency=medium
 
