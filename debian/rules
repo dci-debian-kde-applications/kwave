@@ -21,7 +21,7 @@ override_$(1):
 endef
 
 %:
-	dh $@ --parallel --with kde
+	dh $@ --parallel --with kf5
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(DEB_CMAKE_CUSTOM_FLAGS)

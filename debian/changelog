@@ -14,6 +14,9 @@ kwave (0.9.1-1-0r1) UNRELEASED; urgency=medium
       libkf5guiaddons-dev, libkf5i18n-dev, libkf5iconthemes-dev, kinit-dev,
       kio-dev, libkf5notifications-dev, libkf5service-dev,
       libkf5textwidgets-dev, libkf5widgetsaddons-dev, and libkf5xmlgui-dev
+   * Use the right dh addon:
+     - switch from kde to kf5 dh addon
+     - bump the pkg-kde-tools build dependency to >= 0.15.16
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 25 Mar 2016 10:25:08 +0100
 
