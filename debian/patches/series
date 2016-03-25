@@ -1,2 +1,3 @@
 07-no-rpath
 cmake-verbose.diff
+plugins-not-executable.diff
