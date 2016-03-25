@@ -3,8 +3,10 @@ kwave (0.9.1-1-0r1) UNRELEASED; urgency=medium
   [ Pino Toscano ]
   * New upstream release.
   * Update the patches:
+    - 07-no-rpath: refresh
     - upstream_fix-for-cmake-issues-with-l10n-fix-for-policy-CMP005.patch:
       drop, backported from upstream
+    - cmake-verbose.diff: refresh
     - upstream_compile-fix-for-armv7l.patch: drop, backported from upstream
   * Update the build dependencies following the port to Frameworks:
     - remove kdelibs5-dev
