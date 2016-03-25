@@ -1,5 +1,9 @@
 kwave (0.9.1-1-2) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Backport upstream commit 7b773ae4a6f0e8debeecb440e5d5e7528de804bd to fix
+    the build on non-Linux architectures; patch
+    upstream_move-unportable-includes-within-their-ifdef-blocks.patch.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 25 Mar 2016 14:16:49 +0100
 

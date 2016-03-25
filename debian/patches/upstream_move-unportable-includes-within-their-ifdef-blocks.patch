@@ -1,0 +1,33 @@
+From 7b773ae4a6f0e8debeecb440e5d5e7528de804bd Mon Sep 17 00:00:00 2001
+From: Pino Toscano <pino@kde.org>
+Date: Fri, 25 Mar 2016 13:50:37 +0100
+Subject: [PATCH] move unportable includes within their #ifdef blocks
+
+This fixes (or helps fixing) the build on any OS different than Linux.
+---
+ libkwave/MemoryManager.cpp | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/libkwave/MemoryManager.cpp b/libkwave/MemoryManager.cpp
+index 67a1591..b1f167f 100644
+--- a/libkwave/MemoryManager.cpp
++++ b/libkwave/MemoryManager.cpp
+@@ -29,13 +29,13 @@
+ #include <QString>
+ 
+ #ifdef HAVE_SYSINFO
+-#endif
+ #include <linux/kernel.h> // for struct sysinfo
+ #include <sys/sysinfo.h>  // for sysinfo()
++#endif
+ 
+ #ifdef HAVE_GETRLIMIT
+-#endif
+ #include <sys/resource.h> // for getrlimit()
++#endif
+ 
+ #include "libkwave/MemoryManager.h"
+ #include "libkwave/String.h"
+-- 
+2.8.0.rc3
+

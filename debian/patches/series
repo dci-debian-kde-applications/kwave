@@ -1,3 +1,4 @@
 07-no-rpath
 cmake-verbose.diff
 plugins-not-executable.diff
+upstream_move-unportable-includes-within-their-ifdef-blocks.patch
