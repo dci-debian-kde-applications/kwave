@@ -21,6 +21,7 @@ kwave (0.9.1-1-0r1) UNRELEASED; urgency=medium
     - bump the pkg-kde-tools build dependency to >= 0.15.16
   * Remove the plugins hack in rules: now plugins have a proper .so extension,
     so debhelper tools can handle them correctly.
+  * Use https for the Vcs-Browser field.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 25 Mar 2016 10:25:08 +0100
 
