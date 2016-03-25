@@ -2,6 +2,10 @@ kwave (0.9.1-1-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
+  * Update the patches:
+    - upstream_fix-for-cmake-issues-with-l10n-fix-for-policy-CMP005.patch:
+      drop, backported from upstream
+    - upstream_compile-fix-for-armv7l.patch: drop, backported from upstream
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 25 Mar 2016 10:25:08 +0100
 
