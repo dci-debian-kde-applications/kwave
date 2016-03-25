@@ -13,8 +13,8 @@ kwave (0.9.1-1-0r1) UNRELEASED; urgency=medium
     - add extra-cmake-modules, qtbase5-dev, qtmultimedia5-dev,
       libkf5completion-dev, libkf5config-dev, libkf5configwidgets-dev,
       libkf5coreaddons-dev, libkf5crash-dev, libkf5dbusaddons-dev,
-      libkf5guiaddons-dev, libkf5i18n-dev, libkf5iconthemes-dev, kinit-dev,
-      kio-dev, libkf5notifications-dev, libkf5service-dev,
+      kdoctools-dev, libkf5guiaddons-dev, libkf5i18n-dev, libkf5iconthemes-dev,
+      kinit-dev, kio-dev, libkf5notifications-dev, libkf5service-dev,
       libkf5textwidgets-dev, libkf5widgetsaddons-dev, and libkf5xmlgui-dev
    * Use the right dh addon:
      - switch from kde to kf5 dh addon
