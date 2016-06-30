@@ -6,6 +6,7 @@ kwave (0.9.2-1-0r1) UNRELEASED; urgency=medium
     - plugins-not-executable.diff: drop, no more needed
     - upstream_move-unportable-includes-within-their-ifdef-blocks.patch: drop,
       backported from upstream
+  * Remove kwave-dbg in favour of the -dbgsym packages.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Thu, 30 Jun 2016 21:37:18 +0200
 
