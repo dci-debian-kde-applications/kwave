@@ -4,7 +4,7 @@ Description: Do not set rpath
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -241,11 +241,11 @@ INCLUDE_DIRECTORIES(
+@@ -245,11 +245,11 @@ INCLUDE_DIRECTORIES(
  #############################################################################
  ### RPATH settings                                                        ###
  

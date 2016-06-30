@@ -3,6 +3,7 @@ kwave (0.9.2-1-0r1) UNRELEASED; urgency=medium
   [ Pino Toscano ]
   * New upstream release.
   * Update the patches:
+    - 07-no-rpath: refresh
     - plugins-not-executable.diff: drop, no more needed
     - upstream_move-unportable-includes-within-their-ifdef-blocks.patch: drop,
       backported from upstream
