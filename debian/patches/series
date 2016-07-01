@@ -1,2 +1,3 @@
 07-no-rpath
 cmake-verbose.diff
+upstream_compile-fix-for-ppc-optimized-memcpy-support-for-pow.patch
