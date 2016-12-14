@@ -1,0 +1,855 @@
+kwave (0.9.2-1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Backport upstream commit 1bf6aa2f3c1742415755748fe80b5980a8b239e5 to fix
+    build on powerpc architectures; patch
+    upstream_compile-fix-for-ppc-optimized-memcpy-support-for-pow.patch.
+  * Do not install the upstream README and TODO files as documentation, since
+    they do not provide much user information.
+  * Enable the MP3 support: (LP: #1233262)
+    - pass -DWITH_MP3=ON to cmake
+
+ -- Pino Toscano <pino@debian.org>  Fri, 01 Jul 2016 06:51:32 +0200
+
+kwave (0.9.2-1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update the patches:
+    - 07-no-rpath: refresh
+    - plugins-not-executable.diff: drop, no more needed
+    - upstream_move-unportable-includes-within-their-ifdef-blocks.patch: drop,
+      backported from upstream
+  * Remove kwave-dbg in favour of the -dbgsym packages.
+  * Remove the dh_auto_install override, since now there is only one binary
+    and everything is installed for it already.
+  * Remove the libkf5guiaddons-dev, kinit-dev, and
+    libkf5notifications-dev build dependencies, as they are not needed
+    anymore.
+  * Bump Standards-Version to 3.9.8, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Thu, 30 Jun 2016 22:29:52 +0200
+
+kwave (0.9.1-1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Backport upstream commit 7b773ae4a6f0e8debeecb440e5d5e7528de804bd to fix
+    the build on non-Linux architectures; patch
+    upstream_move-unportable-includes-within-their-ifdef-blocks.patch.
+  * Remove unused poxml and gawk build dependencies.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 25 Mar 2016 15:03:52 +0100
+
+kwave (0.9.1-1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update the patches:
+    - 07-no-rpath: refresh
+    - upstream_fix-for-cmake-issues-with-l10n-fix-for-policy-CMP005.patch:
+      drop, backported from upstream
+    - cmake-verbose.diff: refresh
+    - upstream_compile-fix-for-armv7l.patch: drop, backported from upstream
+  * Update the build dependencies following the port to Frameworks:
+    - remove kdelibs5-dev
+    - add extra-cmake-modules, qtbase5-dev, qtmultimedia5-dev,
+      libkf5completion-dev, libkf5config-dev, libkf5configwidgets-dev,
+      libkf5coreaddons-dev, libkf5crash-dev, libkf5dbusaddons-dev,
+      kdoctools-dev, libkf5guiaddons-dev, libkf5i18n-dev, libkf5iconthemes-dev,
+      kinit-dev, kio-dev, libkf5notifications-dev, libkf5service-dev,
+      libkf5textwidgets-dev, libkf5widgetsaddons-dev, and libkf5xmlgui-dev
+  * Use the right dh addon:
+    - switch from kde to kf5 dh addon
+    - bump the pkg-kde-tools build dependency to >= 0.15.16
+  * Remove the plugins hack in rules: now plugins have a proper .so extension,
+    so debhelper tools can handle them correctly.
+  * Use https for the Vcs-Browser field.
+  * Bump Standards-Version to 3.9.7, no changes required.
+  * Link in as-needed mode.
+  * Fix loading of plugins, by not requiring executable permissions on them;
+    patch plugins-not-executable.diff.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 25 Mar 2016 12:25:42 +0100
+
+kwave (0.9.0-1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Backport part of upstream commit 90f6e432e06e9ec1480a24b37f5ffe5dec4f75fc
+    to fix a double vs float mismatch in sonagram plugin (fixing build on arm*
+    architectures); patch upstream_compile-fix-for-armv7l.patch.
+  * Extend the dh_strip hack into an helper function, and apply it also to
+    dh_shlibdeps: this way we have proper dependencies for all the libraries
+    used by plugins.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 13 Dec 2015 10:24:12 +0100
+
+kwave (0.9.0-1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update the patches:
+    - spelling-error-in-binary.patch: drop, fixed upstream
+    - 07-no-rpath: refresh
+    - fix-help_fr.po.patch: drop, fixed upstream
+  * rules: use the kde dh addon, since kwave is a kdelibs-based application.
+  * control: remove ${shlibs:Depends} from the kwave-dbg Depends.
+  * Backport part of upstream commit 210ea799eb59efcfda21c677995a53042d34054a
+    to make the documentation targets unique, fixing the build with
+    cmake >= 3.3;
+    patch upstream_fix-for-cmake-issues-with-l10n-fix-for-policy-CMP005.patch.
+  * Remove unused build dependencies: imagemagick, recode, libgsl0-dev, and
+    libicu-dev.
+  * Fix the stripping of plugins: create temporary .so links to plugins (whose
+    filenames have no extensions), so dh_strip is able to strip them.
+  * Ensure that the cmake build is really verbose; patch cmake-verbose.diff.
+  * Bump Standards-Version to 3.9.6, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 12 Dec 2015 23:48:29 +0100
+
+kwave (0.8.12-1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Fix unknown entities in doc/help_fr.po (Closes: #759949).
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Sun, 09 Nov 2014 14:52:50 +0500
+
+kwave (0.8.12-1-1) unstable; urgency=low
+
+  * New upstream release
+    - recording via PulseAudio, major bugfixes
+
+ -- Mark Purcell <msp@debian.org>  Sun, 15 Jun 2014 16:09:54 +1000
+
+kwave (0.8.11-1-1) unstable; urgency=low
+
+  * New upstream release
+  * Fix vcs-field-bitrotted
+  * Add spelling-error-in-binary.patch
+
+ -- Mark Purcell <msp@debian.org>  Sun, 08 Dec 2013 09:21:00 +1100
+
+kwave (0.8.10-1-2) unstable; urgency=low
+
+  * Upload to unstable
+  * Update debian/control - fix vcs-field-not-canonical
+
+ -- Mark Purcell <msp@debian.org>  Sun, 12 May 2013 09:56:58 +1000
+
+kwave (0.8.10-1-1) experimental; urgency=low
+
+  * New upstream release 
+  * Added Build-Depends: libopus-dev (>= 1.0.0)
+
+ -- Mark Purcell <msp@debian.org>  Sat, 02 Mar 2013 11:23:57 +1100
+
+kwave (0.8.9-1-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Mark Purcell <msp@debian.org>  Mon, 19 Nov 2012 13:28:05 +1100
+
+kwave (0.8.8-1-3) unstable; urgency=low
+
+  * wheezy polish
+  * Fix "debian/control uses hardcoded list of non-Linux architectures"
+   (Closes: #634787)
+  * Update Standards-Version 3.9.3
+  * debian/compat -> 9 
+
+ -- Mark Purcell <msp@debian.org>  Mon, 25 Jun 2012 20:04:35 +1000
+
+kwave (0.8.8-1-2) unstable; urgency=low
+
+  * Add Build-Depends: librsvg2-bin  
+
+ -- Mark Purcell <msp@debian.org>  Sat, 16 Jun 2012 21:02:41 +1000
+
+kwave (0.8.8-1-1) unstable; urgency=low
+
+  * New upstream release 
+    - Fixes "ftbfs with GCC-4.7" (Closes: #667234)
+    - Fixes "FTBFS in sid: Configuring incomplete" (Closes: #673394)
+    - Fixes "kwave fails (error in the configure step)" (Closes: #674901)
+  * Add Build-Depends: libicu-dev
+
+ -- Mark Purcell <msp@debian.org>  Sun, 10 Jun 2012 16:02:48 +1000
+
+kwave (0.8.7-1-2) unstable; urgency=low
+
+  * Upload to unstable 
+    - part of audiofile transition
+  * cleanup debian/watch - debian-watch-contains-dh_make-template
+  * Drop unused references to common-licences/
+  * Added +spelling-error-in-binary.diff
+  * dh_overide_strip manually remove unneeded and .comment 
+    -  fixes unstripped-binary-or-object
+  * Drop unused-override
+  * Revert #634787 - pbuilder doesn't like solution
+
+ -- Mark Purcell <msp@debian.org>  Thu, 26 Jan 2012 13:28:30 +1100
+
+kwave (0.8.7-1-1) experimental; urgency=low
+
+  * lca2012 release
+
+  * New upstream release
+    - Fixes "FTBFS: VirtualAudioFile.cpp:209:24: error:" (Closes: #655657)
+      - Build-Depends: libaudiofile-dev (>> 0.3.0)
+  * Upload to experimental for libaudio depends
+  * NEW package kwave-dbg
+  * Fix "debian/control uses hardcoded list of non-Linux architectures"
+    Build-Depends: libfoo-dev [linux-any] (Closes: #634787)
+
+ -- Mark Purcell <msp@debian.org>  Wed, 18 Jan 2012 15:16:24 +1100
+
+kwave (0.8.6-1-1) unstable; urgency=low
+
+  * New upstream release 
+  * Drop patches/08-powerpc-ftbfs - fixed upstream
+
+ -- Mark Purcell <msp@debian.org>  Fri, 10 Jun 2011 17:59:43 +1000
+
+kwave (0.8.5-1-4) unstable; urgency=low
+
+  [ Scott Kitterman ]
+  * Add debian/patches/08-powerpc-ftbfs to fix powerpc FTBFS (Closes: #593113)
+     - Thanks to Alessio Treglia for providing the patch in the bug
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sun, 26 Sep 2010 22:06:06 -0400
+
+kwave (0.8.5-1-3) unstable; urgency=low
+
+  * Add Build-Depends: libpulse-dev
+  * dh_auto_configure -- $(DEB_CMAKE_CUSTOM_FLAGS)
+
+ -- Mark Purcell <msp@debian.org>  Tue, 15 Jun 2010 22:26:28 +1000
+
+kwave (0.8.5-1-2) unstable; urgency=low
+
+  * Added Build-Depends: libsamplerate0-dev
+
+ -- Mark Purcell <msp@debian.org>  Tue, 15 Jun 2010 08:45:58 +1000
+
+kwave (0.8.5-1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #581557)
+  * NEW Maintainer: Debian KDE Extras Team 
+    <pkg-kde-extras@lists.alioth.debian.org> (Closes: #497269)
+  * Drop local doc/ changes
+  * Add debian/watch
+  * Drop Obsolete Conflicts: Provides:
+  * source/format -> 3.0 (quilt)
+  * Switch to dh 7 - drop cdbs
+  * Update lintian-overrides
+  * Update Standards-Version: 3.8.4 - Added Vcs:
+
+ -- Mark Purcell <msp@debian.org>  Mon, 14 Jun 2010 17:50:41 +1000
+
+kwave (0.8.2-5) unstable; urgency=low
+
+  * QA upload.
+  * Disable ALSA on non-linux architectures (closes: #582262).
+    Thanks to Pino Toscano for the patch.
+
+ -- Ralf Treinen <treinen@debian.org>  Wed, 19 May 2010 20:51:52 +0200
+
+kwave (0.8.2-4) unstable; urgency=low
+
+  * QA upload.
+  * Add build-dependency on cmake (closes: #581297). Thanks to Modestas
+    Vainius for the patch!
+  * Removed build-dependency on essential package coreutils.
+  * patch 07-no-rpah: Do not set rpath (thanks to Ruben Molina!)
+
+ -- Ralf Treinen <treinen@debian.org>  Mon, 17 May 2010 21:00:37 +0200
+
+kwave (0.8.2-3) unstable; urgency=low
+
+  * QA upload.
+  * patches/06-qreal.diff: update to use upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 26 May 2009 16:21:31 +0200
+
+kwave (0.8.2-2) unstable; urgency=low
+
+  * QA upload.
+  * patches/06-qreal.diff: update to fix FTBFS on armel.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 02 May 2009 10:11:40 +0000
+
+kwave (0.8.2-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream release.
+  * Fix entry in previous changelog stanza.
+  * patches/05-do-not-install-so-synlinks.diff:
+    - Properly rename to 05-do-not-install-so-symlinks.diff
+    - Refresh indexes.
+    - Add a small description.
+  * Remove manual call of dh_desktop in rules, no more needed with
+    desktop-file-utils >= 0.15-2.
+  * Add lintian override for the sonagram plugin.
+  * Remove dirs file, as there's nothing installed in /usr/share/pixmaps.
+  * Bump Standards-Version to 3.8.1, no changes required.
+  * Update copyright, also according to the upstream LICENSES file.
+  * Add patch 06-qreal.diff for qreal vs double mismatches.
+
+ -- Pino Toscano <pino@kde.org>  Sun, 26 Apr 2009 20:28:34 +0200
+
+kwave (0.8.1-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream release:
+    - Update dependencies to KDE 4.
+    - Convert it to CDBS and pkg-kde-tools.
+    - Remove obsolete patches:
+      01-dont-link-arts-when-disabled.diff
+      02-explicitely-link-libaudiofile.diff
+      03-kwave-plugins-in-moduledir.diff
+      04-disable-mp3-per-default.diff
+  * Bump compat to 7.
+  * Add patch 05-do-not-install-so-synlinks.diff to avoid installation of the
+    .so symlinks of private libraries.
+  * Add build depend on pkg-config, libasound2-dev, and libfftw3-dev.
+  * Replace textutils build depend with coreutils.
+  * Rename the lintian overrides file to make it installed automatically by
+    dh_lintian.
+  * "KDE2" -> "KDE" in man page.
+
+ -- Pino Toscano <pino@kde.org>  Thu, 02 Apr 2009 21:01:00 +0200
+
+kwave (0.7.11-1) unstable; urgency=low
+
+  * QA upload:
+    Orphan package, Bertrand Songis has been inactive for more than 6 months
+    and upstream author has tried to reach him for months now without success.
+  * New upstream version:
+    - Kwave does not longer use aRts. (Closes: #367036)
+    - Add several patches provided by upstream:
+      01-dont-link-arts-when-disabled.diff
+      02-explicitely-link-libaudiofile.diff
+      03-kwave-plugins-in-moduledir.diff
+      04-disable-mp3-per-default.diff
+  * Add -DCMAKE_SKIP_RPATH=true to cmake configure, fixes rpath issue. 
+    (Closes: #495758)
+  * Remove leftovers from autotools transition to cmake:
+    - No more usage of debianrules file.
+    - Remove relibtoolization bits and cleaninf of debian/rules.
+    - Remove build depends on: automake1.7, autoconf, autotools-dev, perl,
+      debianutils.
+  * Replace build depend on kdemultimedia-dev with kdelibs4-dev.
+  * Remove dpatch system and add quilt instead.
+  * Update to Standards-Version 3.8.0, no changes required.
+  * Add build depend on mawk. Thanks Thomas! (Closes: #482248)
+  * Update copyright file. (Closes: #419124)
+  * Update overrides.
+  * Update to debhelper compatibility 6.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Sun, 31 Aug 2008 14:20:52 +0200
+
+kwave (0.7.10-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * debian/rules:
+    + Fix bashism (Closes: #459104).
+  * debian/control:
+    + Bump Standards-Version to 3.7.3 (no changes needed).
+    + Add Homepage field.
+  * debian/menu:
+    + Change Apps to Applications.
+
+ -- Marco Rodrigues <gothicx@sapo.pt>  Thu, 24 Jan 2008 20:43:49 +0000
+
+kwave (0.7.10-1) unstable; urgency=low
+
+  * New upstream version.
+  * New maintainer (closes: #393172).
+
+ -- Bertrand Songis <bsongis@gmail.com>  Mon, 27 Aug 2007 15:14:39 +0200
+
+kwave (0.7.7-3) unstable; urgency=low
+
+  * QA upload.
+  * Add in dpatch.
+  * Re-run aclocal and autoconf after patching.
+  * Run dh_iconcache if it exists.
+  * Add a hand-picked patch from upstream SVN to fix FTBFS.
+    (Closes: #426668, #427747, #431199)
+
+ -- Steve Kowalik <stevenk@debian.org>  Sun,  8 Jul 2007 19:22:58 +1000
+
+kwave (0.7.7-2) unstable; urgency=low
+
+  * Orphaning this package, setting maintainer field to
+    packages@qa.debian.org.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 15 Oct 2006 02:28:59 +0200
+
+kwave (0.7.7-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 19 Sep 2006 17:14:56 +0200
+
+kwave (0.7.6-1) unstable; urgency=low
+
+  * New upstream version:
+    - Fix detection of recording devices when kwave is started for the first
+      time or if a recording device is removed from the system (closes: bug#
+      351533).
+    - Sampling rate in record mode is now fixed (closes: #365771).
+  * Bumped Standards-Version to 3.7.2 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue,  6 Jun 2006 01:30:51 +0200
+
+kwave (0.7.5-2) unstable; urgency=low
+
+  * Simple rebuild against KDE 3.5.1, as it seems one of the libraries
+    of KDE 3.5.1 is not compatible with the KDE 3.4.3 version 
+    (closes: bug#351533).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun,  5 Feb 2006 17:21:31 +0100
+
+kwave (0.7.5-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue,  3 Jan 2006 11:29:36 +0100
+
+kwave (0.7.4-2) unstable; urgency=low
+
+  * Build with g++-4.0 now that c++/21123 is fixed (closes: bug#343001).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 12 Dec 2005 03:48:06 +0100
+
+kwave (0.7.4-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 16 Oct 2005 20:02:34 +0200
+
+kwave (0.7.3-6) unstable; urgency=low
+
+  * Build-dep on g++-3.4 on arm, hppa and m68k. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed,  5 Oct 2005 17:58:45 +0200
+
+kwave (0.7.3-5) unstable; urgency=low
+
+  * x86_64 processors always have the cpuid instruction, so don't check 
+    for it (closes: bug#327501).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 13 Sep 2005 18:51:44 +0200
+
+kwave (0.7.3-4) unstable; urgency=low
+
+  * Added a patch to make Kwave buildable on GNU/kFreeBSD. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed,  7 Sep 2005 20:13:45 +0200
+
+kwave (0.7.3-3) unstable; urgency=low
+
+  * C++ transition: tightened build-dependency on libflac++-dev,
+    kdemultimedia-dev, libid3-3.8.3-dev (closes: bug#325943).
+  * Pulled a patch from CVS to support new libFLAC++ 1.1.2 API.
+  * Pulled a patch from CVS to support amd64 with gcc-4.0.
+  * Bumped Standards-Version to 3.6.2 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun,  4 Sep 2005 01:11:41 +0200
+
+kwave (0.7.3-2) unstable; urgency=low
+
+  * Fixed German translations (closes: bug#313790, bug#314000).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 16 Jun 2005 15:06:53 +0200
+
+kwave (0.7.3-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  3 Jun 2005 19:30:11 +0200
+
+kwave (0.7.2-5) unstable; urgency=low
+
+  * Fix an FTBFS with gcc-4.0. Thanks to Andreas Jochens for the patch
+    (closes: bug#298474) .
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  7 Mar 2005 21:37:27 +0100
+
+kwave (0.7.2-4) unstable; urgency=high
+
+  * Call aclocal-1.7 instead of automake-1.7 in Makefile.dist (closes:
+    bug#294525). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 10 Feb 2005 08:15:40 +0100
+
+kwave (0.7.2-3) unstable; urgency=high
+
+  * Rebuilt against libflac++-dev (>= 1.1.1-3) and kdemultimedia
+    (>= 3.3.1-2) (Closes: bug#289953).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 14 Jan 2005 08:37:22 +0100
+
+kwave (0.7.2-2) unstable; urgency=low
+
+  * Added a patch from Kurt Roeckx to fix build on amd64 arches. Thanks
+    (closes: bug#288781).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed,  5 Jan 2005 18:30:15 +0100
+
+kwave (0.7.2-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun,  2 Jan 2005 01:07:10 +0100
+
+kwave (0.7.1-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 11 Jul 2004 01:11:22 +0200
+
+kwave (0.7.0-1-4) unstable; urgency=low
+
+  * Fixed acinclude.m4 (closes: bug#244149). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  1 May 2004 11:16:04 +0200
+
+kwave (0.7.0-1-3) unstable; urgency=low
+
+  * Libtool update (closes: bug#244149). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 17 Apr 2004 02:12:41 +0200
+
+kwave (0.7.0-1-2) unstable; urgency=low
+
+  * Fixed mcopidl flags (closes: bug#243199).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 13 Apr 2004 17:24:44 +0200
+
+kwave (0.7.0-1-1) unstable; urgency=low
+
+  * New upstream version.
+  * Bumped Standards-Version to 3.6.1 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  5 Dec 2003 00:09:13 +0100
+
+kwave (0.6.7-2) unstable; urgency=low
+
+  * Run automake-1.6 and autoconf-1.6 instead of automake and autoconf to
+    avoid calling another version if it is installed.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue,  1 Jul 2003 17:03:10 +0200
+
+kwave (0.6.7-1) unstable; urgency=low
+
+  * New upstream version.
+  * Bumped Standards-Version to 3.5.10.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 29 Jun 2003 16:01:18 +0200
+
+kwave (0.6.6-6) unstable; urgency=low
+
+  * Changed mime type of Ogg bitstream to application/ogg conforming
+    to RF3534.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 18 May 2003 17:43:04 +0200
+
+kwave (0.6.6-5) unstable; urgency=low
+
+  * Bumped Standards-Version to 3.5.9.
+  * Changed section from x11 to kde.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 19 Apr 2003 15:09:24 +0200
+
+kwave (0.6.6-4) unstable; urgency=low
+
+  * Fixed the link /usr/share/doc/kde/HTML/{fr,de}/kwave/common
+    (closes: bug#186170). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 25 Mar 2003 02:36:02 +0100
+
+kwave (0.6.6-3) unstable; urgency=low
+
+  * Rebuild against new libvorbis0a package.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 12 Mar 2003 23:46:23 +0100
+
+kwave (0.6.6-2) unstable; urgency=low
+
+  * Don't depend on both xlibs (>> 4.1.0) and xlibs (>> 4.2.0).
+  * Depends on ${misc:Depends}.
+  * Uses autotools-dev to update config.{guess,sub}.
+  * Uses debian/compat instead of DH_COMPAT.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu,  6 Mar 2003 11:49:18 +0100
+
+kwave (0.6.6-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun,  2 Mar 2003 01:25:59 +0100
+
+kwave (0.6.5-9) unstable; urgency=low
+
+  * Removed icons from /usr/share/kwave
+  * Used system libmad, linked dynamically.
+  * Fixed a typo in the description.
+  * Added Author and Homepage to the description.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 23 Feb 2003 18:35:46 +0100
+
+kwave (0.6.5-8) unstable; urgency=low
+
+  * Build-depends on libqt3-compat-headers (closes: bug#181658).
+  * Linked libid3, libogg and libvorbis dynamically.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 21 Feb 2003 16:39:38 +0100
+
+kwave (0.6.5-7) unstable; urgency=low
+
+  * Fixed a bug added by the previous patch.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 14 Feb 2003 09:56:32 +0100
+
+kwave (0.6.5-6) unstable; urgency=low
+
+  * Automatically start the aRts daemon if it is not running 
+    (closes: bug#180351).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 10 Feb 2003 00:28:11 +0100
+
+kwave (0.6.5-5) unstable; urgency=low
+
+  * Lowered the build-depency on poxml as it also works with poxml 2.2.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun,  9 Feb 2003 12:12:12 +0100
+
+kwave (0.6.5-4) unstable; urgency=low
+
+  * Build Kwave's libmad with -fPIC.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun,  9 Feb 2003 02:58:51 +0100
+
+kwave (0.6.5-3) unstable; urgency=low
+
+  * Pulled some .ui files from CVS.
+  * Built with system libaudiofile instead of builtin libaudiofile.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  8 Feb 2003 11:21:36 +0100
+
+kwave (0.6.5-2) unstable; urgency=low
+
+  * Fixed plugins/about/KwaveAboutDialogBase.ui
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  8 Feb 2003 03:35:58 +0100
+
+kwave (0.6.5-1) unstable; urgency=low
+
+  * New upstream version.
+    Changelog:
+    - MP3 import with ID3 tag support
+    - Ogg/Vorbis import and export (only ABR mode)
+    - new plugin "volume"
+    - show selected range as time
+    - support for saving compressed .wav files
+    - playback plugin: enabled the "select..." button for choosing 
+      other playback devices
+  * Built for KDE 3.1.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed,  5 Feb 2003 23:35:47 +0100
+
+kwave (0.6.4-3-8) unstable; urgency=low
+
+  * Fixed char signedness in libgui/OverViewCache.cpp (closes: #177398). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 19 Jan 2003 13:45:43 +0100
+
+kwave (0.6.4-3-7) unstable; urgency=low
+
+  * Force build with gcc-2.95 on most archs, gcc-2.96 on ia64 and gcc-3.0
+    on hppa.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed,  8 Jan 2003 18:22:31 +0100
+
+kwave (0.6.4-3-6) unstable; urgency=low
+
+  * Fixed description
+  * Changed icon to 24 colors to follow the menu policy.
+  * Standard version bumped to 3.5.8
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 20 Dec 2002 13:38:18 +0100
+
+kwave (0.6.4-3-5) unstable; urgency=low
+
+  * Change Build-Depency from nas-dev to libaudio-dev as the package name
+    changed.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu,  7 Nov 2002 07:20:06 +0100
+
+kwave (0.6.4-3-4) unstable; urgency=low
+
+  * Updated admin directory from ftp.gnu.org. Should now build on mipsel. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  2 Nov 2002 22:00:54 +0100
+
+kwave (0.6.4-3-3) unstable; urgency=low
+
+  * Configure script don't fail anymore on warnings when checking for
+    artsflow.idl (closes: bug#166791). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 30 Oct 2002 23:55:13 +0100
+
+kwave (0.6.4-3-2) unstable; urgency=low
+
+  * Build-Depends on autoconf2.13 instead of autoconf (closes:
+    bug#166597).
+  * Updated Policy standard compliance to 3.5.7 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 28 Oct 2002 13:52:18 +0100
+
+kwave (0.6.4-3-1) unstable; urgency=low
+
+  * New upstream version.
+    Changelog:
+    - Update of the French translation and documentation.
+  * Fix a bug with KDE 2.2 causes a very long starting delay.
+  * Removed the patch concerning a KDE 2.2 as it is included in upstream.
+  * Removed .la files in /usr/lib
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 11 Jul 2002 22:47:45 +0200
+
+kwave (0.6.4-1-2) unstable; urgency=low
+
+  * Added textutils to Build-Depends (fix build error on hppa and mipsel).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  6 Jul 2002 19:49:11 +0200
+
+kwave (0.6.4-1-1) unstable; urgency=low
+
+  * New upstream version
+    Changelog:
+    - support for different file formats / integrated libaudiofile
+    - auto-repair for structurally damaged wav files
+    - using time instead of zoom factor (e.g. set zoom to "1 minute")
+    - menu entries for playback control
+    - some more icons in the menues
+    - added a little chapter about digital audio basics to online help
+    - added "select range" plugin
+    For more information, please see the full Changelog in
+    /usr/share/doc/kwave
+  * The problem concerning long time help generation has been solved by
+    upstream, so kwave-doc-en, kwave-doc-de and kwave-doc-fr are merged
+    again in kwave. This should reduce the Packages.gz file a little :-)
+  * The support of automake1.6 is include in upstream.
+  * Fix a bug with KDE 2.2 causes a very long starting delay.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  6 Jul 2002 16:54:18 +0200
+
+kwave (0.6.3-12) unstable; urgency=low
+
+  * Fixed package description. (closes: bug#149484)
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 10 Jun 2002 00:06:45 +0200
+
+kwave (0.6.3-11) unstable; urgency=low
+
+  * .note and .comment sections of plugins files are now stripped.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 14 Apr 2002 18:51:20 +0200
+
+kwave (0.6.3-10) unstable; urgency=low
+
+  * Fixed the "Maintainer" field in the .changes file (problem in my
+    ~/.pbuilderrc file).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 10 Apr 2002 23:48:04 +0200
+
+kwave (0.6.3-9) unstable; urgency=low
+
+  * Fixed build errors on hppa architecture.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun,  7 Apr 2002 12:51:37 +0200
+
+kwave (0.6.3-8) unstable; urgency=low
+
+  * Don't build help on build-arch target.
+  * Fixed build errors on hppa architecture.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  6 Apr 2002 19:46:13 +0200
+
+kwave (0.6.3-7) unstable; urgency=low
+
+  * Fixed package description. (closes: Bug#141310)
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  5 Apr 2002 20:33:40 +0200
+
+kwave (0.6.3-6) unstable; urgency=low
+
+  * Help files splited off into separate packages (kwave-doc-en,
+  kwave-doc-de, kwave-doc-fr), to avoid very long time compilation
+  on some architectures.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue,  2 Apr 2002 12:41:47 +0200
+
+kwave (0.6.3-5) unstable; urgency=low
+
+  * Fixed build error on hppa architecture.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 31 Mar 2002 12:19:10 +0200
+
+kwave (0.6.3-4) unstable; urgency=low
+
+  * Fixed build error on big endian architectures.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 29 Mar 2002 12:54:03 +0100
+
+kwave (0.6.3-3) unstable; urgency=low
+
+  * Added imagemagick to Build-Depends.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 25 Mar 2002 12:12:16 +0100
+
+kwave (0.6.3-2) unstable; urgency=low
+
+  * Initial Debian upload. (closes: Bug#130088)
+  * Changed my maintainer e-mail address to <aurel32@debian.org>.  :)
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 18 Mar 2002 21:46:16 +0100
+
+kwave (0.6.3-1) unstable; urgency=low
+
+  * New upstream version.
+    Changelog :
+    - simple drag and drop
+    - french translation
+    - handling of "signal modified"
+    - shows error message and aborts if loading failed
+
+ -- Aurelien Jarno <aurelien@aurel32.net>  Sat,  2 Mar 2002 09:29:22 +0100
+
+kwave (0.6.2-4) unstable; urgency=low
+
+  * Generation of HTML help. 
+
+ -- Aurelien Jarno <aurelien@aurel32.net>  Sun, 27 Jan 2002 10:11:26 +0100
+
+kwave (0.6.2-3) unstable; urgency=low
+
+  * Added Build-Depends.
+
+ -- Aurelien Jarno <aurelien@aurel32.net>  Thu, 24 Jan 2002 15:34:01 +0100
+
+kwave (0.6.2-2) unstable; urgency=low
+
+  * Added mime-type to conform debian-policy.
+
+ -- Aurelien Jarno <aurelien@aurel32.net>  Mon, 21 Jan 2002 20:14:05 +0100
+
+kwave (0.6.2-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Aurelien Jarno <aurelien@aurel32.net>  Thu, 10 Jan 2002 13:43:55 +0100
+
+

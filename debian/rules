@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+DEB_HOST_ARCH_OS ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+
+ifneq ($(DEB_HOST_ARCH_OS),linux)
+  DEB_CMAKE_CUSTOM_FLAGS += -DWITH_ALSA=OFF
+endif
+
+export DEB_LDFLAGS_MAINT_APPEND := -Wl,--as-needed
+
+%:
+	dh $@ --parallel --with kf5
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DWITH_MP3=ON $(DEB_CMAKE_CUSTOM_FLAGS)
+
+override_dh_strip:
+	dh_strip --dbgsym-migration='kwave-dbg (<< 0.9.2-1-1~)'
