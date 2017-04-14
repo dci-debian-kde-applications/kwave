@@ -45,6 +45,8 @@ Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-kde/kde-extras/kwave/trunk
 Package: kwave
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: ${kde-l10n:all}
+Replaces: ${kde-l10n:all}
 Description: sound editor for KDE
  Kwave is a sound editor designed for the KDE Desktop Environment.
  .
