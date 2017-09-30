@@ -9,6 +9,7 @@ kwave (17.08.1-0r1) UNRELEASED; urgency=medium
     - upstream_compile-fix-for-ppc-optimized-memcpy-support-for-pow.patch:
       drop, backported from upstream
   * Update lintian overrides.
+  * Switch Homepage to https://www.kde.org/applications/multimedia/kwave.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 30 Sep 2017 19:37:55 +0200
 
