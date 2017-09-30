@@ -11,6 +11,9 @@ kwave (17.08.1-0r1) UNRELEASED; urgency=medium
   * Update lintian overrides.
   * Switch Homepage to https://www.kde.org/applications/multimedia/kwave.
   * Bump Standards-Version to 4.1.1, no changes required.
+  * Replace deprecated build dependencies:
+    - kdoctools-dev -> libkf5doctools-dev
+    - kio-dev -> libkf5kio-dev
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 30 Sep 2017 19:37:55 +0200
 
