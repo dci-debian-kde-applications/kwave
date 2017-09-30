@@ -1,6 +1,6 @@
-kwave (17.08.1-0r1) UNRELEASED; urgency=medium
+kwave (17.08.1-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Update watch file to look for kwave as part of KDE Applications.
   * Update the patches:
@@ -15,7 +15,7 @@ kwave (17.08.1-0r1) UNRELEASED; urgency=medium
     - kdoctools-dev -> libkf5doctools-dev
     - kio-dev -> libkf5kio-dev
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 30 Sep 2017 19:37:55 +0200
+ -- Pino Toscano <pino@debian.org>  Sat, 30 Sep 2017 20:14:34 +0200
 
 kwave (0.9.2-1-2) unstable; urgency=medium
 
