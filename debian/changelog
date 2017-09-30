@@ -3,6 +3,11 @@ kwave (17.08.1-0r1) UNRELEASED; urgency=medium
   [ Pino Toscano ]
   * New upstream release.
   * Update watch file to look for kwave as part of KDE Applications.
+  * Update the patches:
+    - 07-no-rpath: drop, no more needed
+    - cmake-verbose.diff: drop, no more needed
+    - upstream_compile-fix-for-ppc-optimized-memcpy-support-for-pow.patch:
+      drop, backported from upstream
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 30 Sep 2017 19:37:55 +0200
 
