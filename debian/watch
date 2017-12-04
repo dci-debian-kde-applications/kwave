@@ -1,2 +1,2 @@
 version=4
-http://download.kde.org/stable/applications/([\d\.]+)/src/kwave-([\d\.]+)\.tar\.xz
+https://download.kde.org/stable/applications/([\d.]+)/src/@PACKAGE@-([\d.]+)\.tar\.xz
