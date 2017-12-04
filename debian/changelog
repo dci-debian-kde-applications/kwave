@@ -1,3 +1,10 @@
+kwave (17.08.3-0r1) UNRELEASED; urgency=medium
+
+  [ Pino Toscano ]
+  * New upstream release.
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Mon, 04 Dec 2017 20:17:15 +0100
+
 kwave (17.08.1-1) unstable; urgency=medium
 
   * Team upload.
