@@ -1,1 +1,4 @@
-package-name-doesnt-match-sonames libkwave0 libkwavegui0
+# private libraries
+package-name-doesnt-match-sonames
+# private libraries
+no-symbols-control-file
