@@ -3,50 +3,40 @@ Section: kde
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Mark Purcell <msp@debian.org>
-Build-Depends: cmake,
-               debhelper (>= 9),
-               extra-cmake-modules (>= 1.7.0),
-               gettext,
-               libasound2-dev [linux-any],
-               libaudiofile-dev (>> 0.3.0),
-               libfftw3-dev,
-               libflac++-dev (>= 1.1.4),
-               libid3-3.8.3-dev (>= 3.8.3-4.2),
-               libkf5completion-dev,
-               libkf5config-dev,
-               libkf5configwidgets-dev,
-               libkf5coreaddons-dev,
-               libkf5crash-dev,
-               libkf5dbusaddons-dev,
-               libkf5doctools-dev,
-               libkf5i18n-dev,
-               libkf5iconthemes-dev,
-               libkf5kio-dev,
-               libkf5service-dev,
-               libkf5textwidgets-dev,
-               libkf5widgetsaddons-dev,
-               libkf5xmlgui-dev,
-               libmad0-dev,
-               libogg-dev,
-               libopus-dev (>= 1.0.0),
-               libpulse-dev,
-               librsvg2-bin,
-               libsamplerate0-dev,
-               libvorbis-dev (>= 1.0.0-2),
-               pkg-config,
-               pkg-kde-tools (>= 0.15.16),
-               qtbase5-dev (>= 5.4.0),
-               qtmultimedia5-dev (>= 5.4.0)
-Homepage: http://kwave.sourceforge.net
-Standards-Version: 3.9.8
-Vcs-Git: https://anonscm.debian.org/git/pkg-kde/applications/kwave.git
+Build-Depends: debhelper (>= 9), pkg-kde-tools (>= 0.15.16),
+ extra-cmake-modules (>= 1.7.0),
+ qtbase5-dev (>= 5.4.0),
+ qtmultimedia5-dev (>= 5.4.0),
+ libkf5completion-dev,
+ libkf5config-dev,
+ libkf5configwidgets-dev,
+ libkf5coreaddons-dev,
+ libkf5crash-dev,
+ libkf5dbusaddons-dev,
+ libkf5doctools-dev,
+ libkf5i18n-dev,
+ libkf5iconthemes-dev,
+ libkf5kio-dev,
+ libkf5service-dev,
+ libkf5textwidgets-dev,
+ libkf5widgetsaddons-dev,
+ libkf5xmlgui-dev,
+ gettext, pkg-config,
+ libsamplerate0-dev, libpulse-dev,
+ librsvg2-bin, libid3-3.8.3-dev (>= 3.8.3-4.2),
+ libaudiofile-dev (>> 0.3.0), libogg-dev, libvorbis-dev (>= 1.0.0-2), libopus-dev (>= 1.0.0),
+ libflac++-dev (>= 1.1.4), libmad0-dev,
+ libasound2-dev [linux-any],
+ libfftw3-dev,
+ cmake,
+Homepage: https://www.kde.org/applications/multimedia/kwave
+Standards-Version: 4.1.1
+Vcs-Svn: svn://anonscm.debian.org/pkg-kde/kde-extras/kwave/trunk
 Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-kde/kde-extras/kwave/trunk
 
 Package: kwave
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: ${kde-l10n:all}
-Replaces: ${kde-l10n:all}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: sound editor for KDE
  Kwave is a sound editor designed for the KDE Desktop Environment.
  .
